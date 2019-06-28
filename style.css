@@ -4,18 +4,88 @@ body
     padding: 0;
 }
 
-.topSection
+@font-face
 {
-    width: 100% ;
-    height: 100px ;
-    background-color: #C7001A ;
+    font-family: HelveticaNeueCondensedBlack ;
+    src : url(fonts/HelveticaNeue-BlackCond.otf);
+}
+@font-face
+{
+    font-family: HelveticaNeueMedium ; 
+    src : url(fonts/HelveticaNeueMedium.otf);
 }
 
-#username
+.nav
 {
-    position: relative;
-    left :1015px ;
-    top:  23px;
-    width: 323px;
-    height: 73px;
+    background-color: #C7001A;
+    height: 70px;
+}
+
+.nav img
+{
+    height: 80px;
+    width: 80px ;
+    margin-top : -5px;
+}
+
+#shareblood
+{
+    color : white ;
+    font-family: HelveticaNeueCondensedBlack ;
+    font-size: 25px;
+    position: absolute ;
+    top:22px;
+    margin-left:-10px;
+}
+
+.login
+{
+    float: right;
+    margin-top: 15px ;
+    margin-right: 30px;
+    word-spacing: 15px;
+    
+}
+
+.login input[type="text"] , input[type="password"]
+{
+    height: 30px;
+    width: 200px;
+    border-radius: 25px;
+    border : none ;
+    text-align: center ;
+    font-family: HelveticaNeueMedium ;
+    color : #707070 ;
+    
+}
+
+.login input[type="submit"]
+{
+    height: 30px ;
+    width: 76px;
+    border:none ;
+    border-radius: 10px;
+    background-color: #313131;
+    font-family: HelveticaNeueMedium ;
+    color : #FFFFFF ;
+
+    
+}
+
+#forgetPassword
+{
+    color : white ; 
+    font: HelveticaNeueMedium ;
+    font-size:12px;
+    word-spacing: 0;
+    text-decoration: underline ;
+    margin-left : 280px;
+}
+
+::placeholder
+{
+    text-align: center ;
+    font-family: HelveticaNeueMedium ;
+    color : #707070 ;
+    
 }

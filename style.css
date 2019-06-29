@@ -143,7 +143,71 @@ body
     margin-left:12.5%;
     width : 25% ;
     height: 500px;
+    text-align: center ;
+    word-spacing: 10px;
 }
+
+#request
+{
+    word-spacing: 2px;
+    font-family: HelveticaNeueThin ;
+    font-size: 15px;
+    color : #707070 ;
+
+}
+
+.gatherinformation
+{
+    background-color: #313131 ;
+    width : 80% ;
+    height: 300px;
+    border-radius : 40px;
+    display: inline-block;
+}
+
+.gatherinformation input[type=text] , input[type=tel] , select
+{
+    border : none ;
+    border-radius: 25px;
+    text-align: center ;
+    font-family: HelveticaNeueMedium ;
+    color : #707070 ;
+    width : 80%;
+    height: 40px;
+}
+
+.gatherinformation input[type=submit]
+{
+    width : 50%;
+    height: 40px;
+    border-radius: 25px;
+    color: #FFFFFF ;
+    background-color: #C7001A;
+    border: none ;
+
+}
+
+select
+{
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+}
+
+#question
+{
+    word-spacing: 2px;
+    font-family: HelveticaNeueThin ;
+    font-size: 17px;
+    color : #707070 ;
+    text-decoration: underline ;
+
+}
+
 
 /* Options */
 .options

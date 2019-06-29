@@ -19,6 +19,11 @@ body
     font-family: HelveticaNeueThin ;
     src : url(fonts/HelveticaNeueThin.otf);
 }
+@font-face
+{
+    font-family: HelveticaNeueCondensedBold ;
+    src: url(fonts/HelveticaNeueCondensedBold.ttf);
+}
 
 ::placeholder
 {
@@ -98,10 +103,6 @@ body
 }
 
 /* Body part */
-.bodypart
-{
-
-}
 
 /* Banner */
 .bannerbox
@@ -111,7 +112,7 @@ body
     /* margin-left:6.25%; */
     height: 500px;
     width: 31.25%;
-    border : 2px solid black ;
+    /* border : 2px solid black ; */
     text-align: center ;
 }
 
@@ -138,7 +139,7 @@ body
 {
     position: absolute ;
     left:25% ;
-    border : 2px solid black;
+    /* border : 2px solid black; */
     margin-top:60px;
     margin-left:12.5%;
     width : 25% ;
@@ -208,6 +209,11 @@ select
 
 }
 
+#question a
+{
+    color : inherit ;
+}
+
 
 /* Options */
 .options
@@ -218,9 +224,22 @@ select
     margin-left:18.75%;
     height: 500px;
     width: 25%;
-    border : 2px solid black ; 
+    /* border : 2px solid black ; */
+    text-align: center ;
 }
 
+.options button
+{
+    width: 100% ;
+    height: 70px;
+    border: none ;
+    border-radius: 25px;
+    background-color: #C7001A;
+    color : #ffffff ;
+    font-family: HelveticaNeueCondensedBold ;
+    font-size: 20px;
+
+}
 
 
 

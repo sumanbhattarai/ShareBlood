@@ -7,7 +7,7 @@ body
 @font-face
 {
     font-family: HelveticaNeueCondensedBlack ;
-    src : url(fonts/HelveticaNeue-BlackCond.otf);
+    src : url(fonts/HelveticaNeueBlackCond.otf);
 }
 @font-face
 {
@@ -102,6 +102,10 @@ body
     margin-left : 280px;
 }
 
+#forgetPassword a 
+{
+    color : inherit ;
+}
 /* Body part */
 
 /* Banner */

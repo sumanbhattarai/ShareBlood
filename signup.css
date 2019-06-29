@@ -129,6 +129,12 @@ body
     font-size: 15px;
     font-family: HelveticaNeueMedium ;
     margin-top : 3% ;
+
+}
+
+.bigbox input[type=submit]:hover
+{
+    cursor: pointer;
 }
 
 .secondbox

@@ -26,11 +26,11 @@
             <div class="bigbox">
                 <br><br><br>
                 <form action="">
-                    <input type="text" name="name" id="" placeholder="Hospital Name" onfocus="borderBlue()" ><br><br>
-                    <input type="email" name="email" id="" placeholder="Email" onfocus="borderBlue()"><br><br>
-                    <input type="password" name="password" id="" placeholder="Password" onfocus="borderBlue()"><br><br>
-                    <input type="text" name="location" id="" placeholder="Location" onfocus="borderBlue()"><br><br>
-                    <input type="tel" name="telephone" id="" placeholder="Telephone Number" onfocus="borderBlue()"><br><br>
+                    <input type="text" name="name" id="name" placeholder="Hospital Name" ><br><br>
+                    <input type="email" name="email" id="email" placeholder="Email" ><br><br>
+                    <input type="password" name="password" id="password" placeholder="Password" ><br><br>
+                    <input type="text" name="location" id="location" placeholder="Location" ><br><br>
+                    <input type="tel" name="telephone" id="telephone" placeholder="Telephone Number" ><br><br>
                     <input type="checkbox" name="" id=""> <span id="agree">Agree all terms & Conditions</span> <br><br>
                     <input type="submit" value="Continue">
 
@@ -62,7 +62,60 @@
     </div>
 
 
-    <script src="script.js"></script>
+    <script>
+
+
+document.getElementById("name").onfocus = function(){
+    document.getElementById("name").style.border = "1px solid #2898E9 " ;
+}
+
+document.getElementById("name").onblur = function(){
+    document.getElementById("name").style.border = "1px solid #707070 " ;
+}
+
+
+document.getElementById("name").onfocus = function(){
+    document.getElementById("name").style.border = "1px solid #2898E9 " ;
+}
+
+document.getElementById("email").onblur = function(){
+    document.getElementById("email").style.border = "1px solid #707070 " ;
+}
+
+
+document.getElementById("email").onfocus = function(){
+    document.getElementById("email").style.border = "1px solid #2898E9 " ;
+}
+
+
+
+document.getElementById("telephone").onfocus = function(){
+    document.getElementById("telephone").style.border = "1px solid #2898E9 " ;
+}
+document.getElementById("telephone").onblur = function(){
+    document.getElementById("telephone").style.border = "1px solid #707070 " ;
+}
+
+
+
+
+document.getElementById("password").onfocus = function(){
+    document.getElementById("password").style.border = "1px solid #2898E9 " ;
+}
+
+document.getElementById("password").onblur = function(){
+    document.getElementById("password").style.border = "1px solid #707070 " ;
+}
+
+document.getElementById("location").onfocus = function(){
+    document.getElementById("location").style.border = "1px solid #2898E9 " ;
+}
+
+document.getElementById("location").onblur = function(){
+    document.getElementById("location").style.border = "1px solid #707070 " ;
+}
+    
+    </script>
     
 </body>
 </html>

@@ -52,23 +52,108 @@ body
 }
 
 /* Body Part */
-.signupbox
+
+.firstbox
+{
+    width : 55%;
+    height: 600px;
+    float : left ;
+    text-align: center ;
+}
+.firstbox img
 {
     position: absolute;
-    border: 2px solid black ;
-    width: 49% ;
-    height: 600px;
-    margin-top:10px;
+    width: 800px ;
+    height: auto ;
+    opacity: 0.1;
+    z-index: -1;
+}
+.smallbox
+{
+    
+    width : 160px ;
+    height: 50px;
+    margin-top: 30px;
+    margin-left : 22%;
+    position: absolute;
+    background-color: #ffffff ;
+    text-align: center ;
 }
 
-.themebox
+#signuptext
 {
-    border: 2px solid black ;
-    width: 49% ;
-    height: 600px;
-    margin-top:10px;
-    float: right;
+    font-size: 30px;
+    font-family: HelveticaNeueThin; 
+    color: #2898E9 ;
+}
 
+.bigbox
+{
+    width: 55%;
+    height: 500px;
+    margin-top: 50px;
+    border : 1px solid #2898E9 ;
+    border-radius: 150px ;
+    display: inline-block;
+}
+
+
+.bigbox input[type=email] , input[type=tel] , input[type=password] , input[type=text]
+{
+    font-family: HelveticaNeueMedium ;
+    text-align: center ;
+    width: 80%;
+    height: 50px;
+    background: rgba(255,255,255,0);
+    border-radius: 25px ;
+    border: none ;
+    border: 1px solid #707070 ;
+
+}
+
+#agree
+{
+    color : #707070 ;
+    font-family: HelveticaNeueThin ;
+    
+}
+
+.bigbox input[type=submit] 
+{
+    width: 45% ;
+    height : 45px;
+    background-color: #C7001A ;
+    border-radius: 25px;
+    border : none ;
+    color : #ffffff;
+    font-size: 15px;
+    font-family: HelveticaNeueMedium ;
+    margin-top : 3% ;
+}
+
+.secondbox
+{
+    height: 500px;
+    width: 40%;
+    float : right ;
+    margin-top : 100px;
+    text-align: center ;
+}
+
+.secondbox img
+{
+    width : 300px;
+    height: auto;
+    
+}
+
+#sentence
+{
+    font-family: HelveticaNeueThin ;
+    color : #707070 ;
+    font-size: 20px;
+    
+   
 }
 
 /* Footer */

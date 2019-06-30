@@ -25,14 +25,6 @@ body
     src: url(fonts/HelveticaNeueCondensedBold.ttf);
 }
 
-::placeholder
-{
-    text-align: center ;
-    font-family: HelveticaNeueMedium ;
-    color : #707070 ;
-    
-}
-
 /* Navbar within login */
 
 .nav
@@ -206,6 +198,7 @@ body
 
 select
 {
+    word-spacing: 0;
     margin: 0;      
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

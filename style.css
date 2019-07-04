@@ -24,13 +24,12 @@ body
     font-family: HelveticaNeueCondensedBold ;
     src: url(fonts/HelveticaNeueCondensedBold.ttf);
 }
+
 ::placeholder
 {
-    text-align: center ;
-    font-family: HelveticaNeueThin;
-    color : #707070 ;
-    
+    font-family: HelveticaNeueMedium;
 }
+
 /* Navbar within login */
 
 .nav
@@ -65,7 +64,7 @@ body
     
 }
 
-.login input[type="text"] , input[type="password"]
+.login input[type="email"] , input[type="password"]
 {
     height: 30px;
     width: 200px;
@@ -179,7 +178,7 @@ body
     border : none ;
     border-radius: 25px;
     text-align: center ;
-    font-family: HelveticaNeueThin;
+    font-family: HelveticaNeueMedium;
     color : #707070 ;
     width : 80%;
     height: 40px;

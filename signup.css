@@ -25,7 +25,13 @@ body
     font-family: HelveticaNeueCondensedBold ;
     src: url(fonts/HelveticaNeueCondensedBold.ttf);
 }
-
+::placeholder
+{
+    text-align: center ;
+    font-family: HelveticaNeueMedium;
+    color : #707070 ;
+    
+}
 /* Navbar */
 
 .nav

@@ -24,7 +24,13 @@ body
     font-family: HelveticaNeueCondensedBold ;
     src: url(fonts/HelveticaNeueCondensedBold.ttf);
 }
-
+::placeholder
+{
+    text-align: center ;
+    font-family: HelveticaNeueThin;
+    color : #707070 ;
+    
+}
 /* Navbar within login */
 
 .nav
@@ -173,7 +179,7 @@ body
     border : none ;
     border-radius: 25px;
     text-align: center ;
-    font-family: HelveticaNeueMedium ;
+    font-family: HelveticaNeueThin;
     color : #707070 ;
     width : 80%;
     height: 40px;

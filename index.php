@@ -1,4 +1,19 @@
 
+
+<!-- Connecting PHP with database -->
+<?php
+$servername = "localhost";
+$username = "sbofficial";
+$password = "sumanbhattarai";
+$dbname = "shareblood" ;
+// Create connection
+$conn = new mysqli($servername, $username, $password , $dbname);
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,10 +33,10 @@
             <span id="shareblood">ShareBlood</span>
        
         <div class = "login">
-            <form action="" >
+            <form action="login.php" method = "post" >
                 <input type = "email" name = "email" placeholder = "Email" >
                 <input type = "password" name = "password" placeholder="Password">
-                <input type = "submit" value = "Login">
+                <input type = "submit" value = "Login" name="submit">
             </form>
             <span id="forgetPassword"> <a href = "">forget password ? </a></span>
         </div>

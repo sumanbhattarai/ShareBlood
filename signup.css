@@ -124,6 +124,13 @@ body
     
 }
 
+#erroragree
+{
+    color :#C7001A;
+    font-size: 14px;
+
+}
+
 .bigbox input[type=submit] 
 {
     width: 45% ;

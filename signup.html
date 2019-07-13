@@ -25,13 +25,13 @@
             </div>
             <div class="bigbox">
                 <br><br><br>
-                <form action="verify.html">
+                <form action="verify.html" onsubmit="return validate()">
                     <input type="text" name="name" id="name" placeholder="Hospital Name" ><br><br>
                     <input type="email" name="email" id="email" placeholder="Email" ><br><br>
                     <input type="password" name="password" id="password" placeholder="Password" ><br><br>
                     <input type="text" name="location" id="location" placeholder="Location" ><br><br>
                     <input type="tel" name="telephone" id="telephone" placeholder="Telephone Number" ><br><br>
-                    <input type="checkbox" name="" id=""> <span id="agree">Agree all terms & Conditions</span> <br><br>
+                    <input type="checkbox" name="" id="checkagree"> <span id="agree">Agree all terms & Conditions</span> <br><span id="erroragree"></span><br>
                     <input type="submit" value="Continue">
 
 
@@ -113,6 +113,49 @@ document.getElementById("location").onfocus = function(){
 
 document.getElementById("location").onblur = function(){
     document.getElementById("location").style.border = "1px solid #707070 " ;
+}
+
+
+function validate()
+{
+    const hospitalName = document.getElementById('name').value ;
+    const email = document.getElementById('email').value ;
+    const password = document.getElementById('password').value ;
+    const location = document.getElementById('location').value ;
+    const telephone = document.getElementById('telephone').value ;
+    if(hospitalName=="" || email == "" || password == "" || location == "" || telephone =="")
+    {
+        if(hospitalName=="")
+        {
+            document.getElementById('name').style.borderColor = "#C7001A" ;
+        }
+        if(email=="")
+        {
+            document.getElementById('email').style.borderColor = "#C7001A" ;
+        }
+        if(password=="")
+        {
+            document.getElementById('password').style.borderColor = "#C7001A" ;
+        }
+        if(location=="")
+        {
+            document.getElementById('location').style.borderColor = "#C7001A" ;
+        }
+        if(telephone=="")
+        {    
+            document.getElementById('telephone').style.borderColor = "#C7001A" ;
+        }
+        return false ;
+
+    }
+
+    if(document.getElementById('checkagree').checked === false )
+    {
+        document.getElementById('erroragree').innerHTML = "*Please , agree our terms." ;
+        return false;
+    }
+   
+
 }
     
     </script>

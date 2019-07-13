@@ -1,19 +1,4 @@
 
-
-<!-- Connecting PHP with database -->
-<?php
-$servername = "localhost";
-$username = "sbofficial";
-$password = "sumanbhattarai";
-$dbname = "shareblood" ;
-// Create connection
-$conn = new mysqli($servername, $username, $password , $dbname);
-?>
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,8 +19,8 @@ $conn = new mysqli($servername, $username, $password , $dbname);
        
         <div class = "login">
             <form action="login.php" method = "post" >
-                <input type = "email" name = "email" placeholder = "Email" >
-                <input type = "password" name = "password" placeholder="Password">
+                <input type = "email" name = "email" placeholder = "Email" required >
+                <input type = "password" name = "password" placeholder="Password" required>
                 <input type = "submit" value = "Login" name="submit">
             </form>
             <span id="forgetPassword"> <a href = "">forget password ? </a></span>
@@ -56,10 +41,10 @@ $conn = new mysqli($servername, $username, $password , $dbname);
            <div class ="gatherinformation">
                <form action="">
                    <br><br>
-                   <input type="text" name = "fullname" placeholder="Full Name"> <br><br>
-                   <input type="tel" name = "phonenumber" placeholder="Phone Number"> <br><br>
-                   <input type="text" name="address" placeholder="Address"> <br><br>
-                   <select name="" id="" class="round">
+                   <input type="text" name = "fullname" placeholder="Full Name" required> <br><br>
+                   <input type="tel" name = "phonenumber" placeholder="Phone Number" required> <br><br>
+                   <input type="text" name="address" placeholder="Address" required> <br><br>
+                   <select name="" id="" class="round" required>
                        <option value="" disabled selected>Select your Blood Group</option>
                        <option value="">A+</option>
                        <option value="">A-</option>

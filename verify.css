@@ -98,11 +98,23 @@ body
     width : 80% ;
     height: 50px;
     border : 1px solid #707070 ;
+    outline: none;
     border-radius: 25px;
     text-align: center ;
     font-size: 40px;
     font-family: HelveticaNeueThin ;
     background-color: rgba(255,255,255,0);
+}
+
+#resend
+{
+    font-family: HelveticaNeueThin ;
+    font-size: 13px;
+}
+
+#resend a 
+{
+    color : inherit ;
 }
 
 .codebox input[type=submit]
@@ -113,6 +125,7 @@ body
     color : #ffffff ;
     font-family: HelveticaNeueThin ;
     border : none ; 
+    outline: none;
     border-radius: 25px;
     font-size: 20px;
     margin-top : 13%;

@@ -70,6 +70,7 @@ body
     width: 200px;
     border-radius: 25px;
     border : none ;
+    outline: none;
     text-align: center ;
     font-family: HelveticaNeueMedium ;
     color : #707070 ;
@@ -81,6 +82,7 @@ body
     height: 30px ;
     width: 76px;
     border:none ;
+    outline: none;
     border-radius: 10px;
     background-color: #313131;
     font-family: HelveticaNeueMedium ;
@@ -176,6 +178,7 @@ body
 .gatherinformation input[type=text] , input[type=tel] , select
 {
     border : none ;
+    outline: none;
     border-radius: 25px;
     text-align: center ;
     font-family: HelveticaNeueMedium;
@@ -192,6 +195,7 @@ body
     color: #FFFFFF ;
     background-color: #C7001A;
     border: 2px solid #FFFFFF ;
+    outline : none;
 
 }
 
@@ -247,6 +251,7 @@ select
     width: 100% ;
     height: 70px;
     border: none ;
+    outline: none;
     border-radius: 25px;
     background-color: #C7001A;
     color : #ffffff ;

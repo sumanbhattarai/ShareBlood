@@ -1,3 +1,7 @@
+<?php
+session_start();
+include("connection.php");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,10 +22,10 @@
             <span id="shareblood">ShareBlood</span>
        
         <div class = "login">
-            <form action="login.php" method = "post" >
+            <form action="" method = "post" >
                 <input type = "email" name = "email" placeholder = "Email" required >
                 <input type = "password" name = "password" placeholder="Password" required>
-                <input type = "submit" value = "Login" name="submit">
+                <input type = "submit" value = "Login" name="login">
             </form>
             <span id="forgetPassword"> <a href = "">forget password ? </a></span>
         </div>
@@ -88,3 +92,27 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+<?php  
+if(isset($_POST['login']))
+{
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $query = " SELECT * FROM try WHERE EMAIL='$email' && PASSWORD='$password' " ;
+    $data = mysqli_query($conn , $query) ;
+    $total = mysqli_num_rows($data) ;
+    if($total !=0)
+    {
+        $_SESSION['email'] = $email ; 
+        header('location:home.php');
+    }
+    else
+    {
+        header('location:login.php');
+    }
+    
+
+
+}
+
+?>

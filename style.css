@@ -173,6 +173,8 @@ body
     height: 300px;
     border-radius : 40px;
     display: inline-block;
+    
+    
 }
 
 .gatherinformation input[type=text] , input[type=tel] , select

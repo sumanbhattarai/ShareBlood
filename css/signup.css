@@ -8,22 +8,22 @@ body
 @font-face
 {
     font-family: HelveticaNeueCondensedBlack ;
-    src : url(fonts/HelveticaNeueBlackCond.otf);
+    src : url(../fonts/HelveticaNeueBlackCond.otf);
 }
 @font-face
 {
     font-family: HelveticaNeueMedium ; 
-    src : url(fonts/HelveticaNeueMedium.otf);
+    src : url(../fonts/HelveticaNeueMedium.otf);
 }
 @font-face
 {
     font-family: HelveticaNeueThin ;
-    src : url(fonts/HelveticaNeueThin.otf);
+    src : url(../fonts/HelveticaNeueThin.otf);
 }
 @font-face
 {
     font-family: HelveticaNeueCondensedBold ;
-    src: url(fonts/HelveticaNeueCondensedBold.ttf);
+    src: url(../fonts/HelveticaNeueCondensedBold.ttf);
 }
 ::placeholder
 {

@@ -10,15 +10,15 @@ include("connection.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ShareBlood</title>
-    <link rel="shortcut icon" type="image/png" href="logo.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
     
 </head>
 <body>
 
     <!-- Nav Bar and login -->
     <div class = "nav" >
-            <img src = "trans.png">
+            <img src = "images/trans.png">
             <span id="shareblood">ShareBlood</span>
        
         <div class = "login">
@@ -35,7 +35,7 @@ include("connection.php");
    <!-- Body part -->
    <div class = "bodypart" >
        <div class = "bannerbox">
-           <img src="banner.png" alt="ShareBlood Banner">
+           <img src="images/banner.png" alt="ShareBlood Banner">
            <span id="slogan"><b>“</b> To give blood you need neither extra <br> strength nor extra food, and <br>you will save a life. <b>“</b></span>
 
        </div>

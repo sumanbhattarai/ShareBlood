@@ -46,11 +46,14 @@ $result = mysqli_fetch_assoc($data);
                     <i class="fas fa-cogs" id="setting" title="Setting"></i>
                 </div>
                 <div class="logout-box">
-                    <button title="Click here to logout." onclick="window.location.href='logout.php'"><i class="fas fa-sign-out-alt"></i></button>
+                    <button title="Click here to logout." onclick="logoutClick()"><i class="fas fa-sign-out-alt"></i></button>
                 </div>
             </div>
             
     </div>
+
+
+    <script src="js/home.js"></script>
     
 </body>
 </html>

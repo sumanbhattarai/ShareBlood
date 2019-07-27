@@ -1,0 +1,185 @@
+body
+{
+    margin:0 ;
+    padding: 0;
+}
+
+/* Fonts */
+@font-face
+{
+    font-family: HelveticaNeueCondensedBlack ;
+    src : url(../fonts/HelveticaNeueBlackCond.otf);
+}
+@font-face
+{
+    font-family: HelveticaNeueMedium ; 
+    src : url(../fonts/HelveticaNeueMedium.otf);
+}
+@font-face
+{
+    font-family: HelveticaNeueThin ;
+    src : url(../fonts/HelveticaNeueThin.otf);
+}
+@font-face
+{
+    font-family: HelveticaNeueCondensedBold ;
+    src: url(../fonts/HelveticaNeueCondensedBold.ttf);
+}
+
+::placeholder
+{
+    font-family: HelveticaNeueMedium;
+}
+
+/* Navbar */
+
+.nav
+{
+    background-color: #C7001A;
+    height: 70px;
+}
+
+.nav img
+{
+    height: 80px;
+    width: 80px ;
+    margin-top : -5px;
+}
+
+#shareblood
+{
+    color : white ;
+    font-family: HelveticaNeueCondensedBlack ;
+    font-size: 25px;
+    position: absolute ;
+    top:22px;
+    margin-left:-10px;
+}
+
+/* body */
+
+.login-box
+{
+    position: absolute;
+    border : none ;
+    background-color: #707070 ;
+    width : 40% ;
+    height: 55%;
+    left : 30% ;
+    top : 20% ;
+    text-align: center;
+    box-shadow: 5px 5px 15px 5px #000000 ;
+}
+
+.inner-box
+{
+    /* border : 1px solid red ; */
+    width : 60% ;
+    height: 100%;
+    display: inline-block;
+}
+
+#login-text
+{
+    color: #ffffff ;
+    font-family: HelveticaNeueCondensedBold ;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.inner-box input[type=email] , input[type=password]
+{
+    width: 80% ;
+    height: 40px;
+    border-radius: 25px;
+    border : none ;
+    outline: none;
+    text-align: center ;
+    font-family: HelveticaNeueMedium ;
+    color : #707070 ;
+
+}
+
+.inner-box input[type=submit]
+{
+    width : 20% ;
+    height: 30px;
+    border:none ;
+    outline: none;
+    border-radius: 10px;
+    background-color: #313131;
+    font-family: HelveticaNeueMedium ;
+    color : #FFFFFF ;
+}
+
+.inner-box input[type=submit]:hover
+{
+    cursor: pointer;
+    background-color : #000000 ;
+
+}
+
+#forget-password a
+{
+    color : #ffffff ;
+    font-family: HelveticaNeueThin ;
+    font-size : 14px;
+    
+}
+
+
+#or
+{
+    color : #ffffff ;
+    font-family: HelveticaNeueMedium ;
+    background-color : #707070;
+    position: absolute;
+    top : 72.5%;
+
+}
+
+.inner-box button 
+{
+    width : 250px;
+    height: 50px;
+    border : none ;
+    outline : none ;
+    background-color : #C7001A ;
+    font-size: 20px;
+    font-family: HelveticaNeueCondensedBold;
+    color : #ffffff ;
+    border-radius: 25px;
+
+}
+
+.inner-box button:hover
+{
+    cursor: pointer;
+}
+
+
+
+/* Footer */
+.footer
+{
+    text-align: center ;
+    position: fixed;
+    left: 0;
+    bottom: 2%;
+    width: 100%;
+    color : #707070 ;
+    word-spacing: 5px;
+    font-family: HelveticaNeueThin ;
+    font-size: 12px;
+}
+
+.footer a 
+{
+    color : inherit ;
+    text-decoration: none ;
+}
+.footer a:hover
+{
+    text-decoration: underline ;
+
+}

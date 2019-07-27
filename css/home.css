@@ -208,11 +208,40 @@ body
      top : 100px;
  }
 
+ .profile-picture-onhover
+ {
+     background-color: #707070;
+     opacity: 0.8;
+ }
+
+
  .profile-picture img
  {
      height: 200px;
      width: 200px ;
  }
+
+ .profile-picture-onhover img
+ {
+     opacity: 0.3;
+ }
+
+ .change-pp
+ {
+     position: absolute;
+     color : #ffffff ;
+     font-size: 50px;
+     left : 39% ;
+     top : 40%;
+     z-index: 1;
+ }
+
+ .change-pp:hover 
+ {
+     cursor: pointer;
+ }
+
+ 
 
  #account-name
  {

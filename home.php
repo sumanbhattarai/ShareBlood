@@ -22,7 +22,7 @@ $result = mysqli_fetch_assoc($data);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Home - ShareBlood</title>
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Philosopher" rel="stylesheet">
@@ -53,8 +53,10 @@ $result = mysqli_fetch_assoc($data);
     </div>
 
     <div class="profile-section">
-        <div class="profile-picture">
-            <img src="images/logo.png" alt="">
+        <div class="profile-picture profile-picture-onhover">
+            <div class="change-pp"><i class="fas fa-camera" title="Change Profile Picture"></i></div>
+            <img src="images/logo.png" id="pp" alt="">
+        
         </div>
         <span id="account-name">Gandaki Medical College</span>
         <div class="profile-info">

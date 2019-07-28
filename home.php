@@ -43,7 +43,7 @@ $result = mysqli_fetch_assoc($data);
                 </div>
                 <div class="options-box">
                     <i class="fas fa-bell" id="bell" title="Notification"></i>
-                    <i class="fas fa-cogs" id="setting" title="Setting"></i>
+                    <i class="fas fa-cogs" id="setting" title="Setting" onclick="window.location.href='settings.php'"></i>
                 </div>
                 <div class="logout-box">
                     <button title="Click here to logout." onclick="logoutClick()"><i class="fas fa-sign-out-alt"></i></button>

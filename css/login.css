@@ -58,6 +58,15 @@ body
 
 /* body */
 
+.error-message
+{
+    font-size: 20px ;
+    color : #C7001A ;
+    text-align: center;
+    font-family: HelveticaNeueMedium ;
+    margin-top : 3% ;
+}
+
 .login-box
 {
     position: absolute;

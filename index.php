@@ -98,7 +98,7 @@ if(isset($_POST['login']))
 {
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $query = " SELECT * FROM try WHERE EMAIL='$email' && PASSWORD='$password' " ;
+    $query = " SELECT * FROM try WHERE EMAIL='$email' && PASSWORD=='$password' " ;
     $data = mysqli_query($conn , $query) ;
     $total = mysqli_num_rows($data) ;
     if($total !=0)

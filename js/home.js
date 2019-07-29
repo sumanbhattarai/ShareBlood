@@ -10,6 +10,14 @@ intial();
 
 
 
+document.querySelector('.profile-picture').addEventListener('mouseover' , function(){
+    document.querySelector('.profile-picture').classList.add('profile-picture-onhover');
+    document.querySelector('.change-pp').style.display = "unset" ;
+   
+});
+
+document.querySelector('.profile-picture').addEventListener('mouseout' , intial);
+
 function logoutClick()
 {
     var choice = confirm("Are you sure to logout ?");
@@ -18,11 +26,3 @@ function logoutClick()
         window.location.href='logout.php' ;
     }
 }
-
-document.querySelector('.profile-picture').addEventListener('mouseover' , function(){
-    document.querySelector('.profile-picture').classList.add('profile-picture-onhover');
-    document.querySelector('.change-pp').style.display = "unset" ;
-   
-});
-
-document.querySelector('.profile-picture').addEventListener('mouseout' , intial);

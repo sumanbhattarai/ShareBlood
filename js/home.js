@@ -49,3 +49,26 @@ shareBlood.addEventListener('mouseout' , function(){
 shareBlood.addEventListener('click' , function(){
     window.location.href='index.php' ;
 });
+
+
+// popupbox of blood request close button
+
+const closeBtn = document.getElementById('close-btn') ;
+closeBtn.addEventListener('mouseover' , function(){
+    closeBtn.style.cursor = 'pointer' ;
+});
+
+function popup()
+{
+    document.querySelector('.box-blood-request').style.display = 'flex' ;
+    document.getElementById('blood-group').value  = document.getElementById('blood-group-for-posting').value ;
+    return false ;
+
+}
+
+closeBtn.addEventListener('click' , function(){
+    document.querySelector('.box-blood-request').style.display = 'none' ;
+});
+
+//get the selected blood group
+

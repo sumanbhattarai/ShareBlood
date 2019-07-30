@@ -100,23 +100,92 @@ $result = mysqli_fetch_assoc($data);
 
         <div class="post-blood-request">
         <br><br>
-        <form action="">
-            <select name="" id="" class="round" required>
+        <form action="" method="POST" onsubmit='return popup()'>
+            <select name="bloodGroup" id="blood-group-for-posting" class="round" required>
                        <option value="" disabled selected>Select Blood Group</option>
-                       <option value="">A+</option>
-                       <option value="">A-</option>
-                       <option value="">B+</option>
-                       <option value="">B-</option>
-                       <option value="">O+</option>
-                       <option value="">O-</option>
-                       <option value="">AB+</option>
-                       <option value="">AB-</option>
+                       <option value="A+">A+</option>
+                       <option value="A-">A-</option>
+                       <option value="B+">B+</option>
+                       <option value="B-">B-</option>
+                       <option value="O+">O+</option>
+                       <option value="O-">O-</option>
+                       <option value="AB+">AB+</option>
+                       <option value="AB-">AB-</option>
             </select>
             <br><br>
 
-            <input type="submit" value = "Post Blood Request">
+            <input type="submit" name="postRequestSubmit" value = "Post Blood Request">
 
 
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- Pop Up box when post blood request button is clicked -->
+    <div class = 'box-blood-request'>
+        <div class='popup-blood-request'>
+            <div><i class="fas fa-times-circle" id="close-btn"></i></div>
+            <br>
+            <form action="">
+            <table>
+                <tr>
+                    <td>Hospital Name</td>
+                    <td>:</td>
+                    <td><input type="text" name="hospital-name" id="hospital-name" value="Gandaki Medical College" style="pointer-events:none ;" readonly></td>
+                </tr>
+                <tr>
+                    <td>Hospital Telephone</td>
+                    <td>:</td>
+                    <td><input type="tel" id="hospital-telephone" name="hospital-telephone" value="0565-70053" style="pointer-events:none ;" readonly></td>
+                </tr>
+                <tr>
+                    <td>Hospital Address</td>
+                    <td>:</td>
+                    <td><input type="text" name="hospital-address" id="hospital-address" value="State 4 - Kaski - Pokhara" style="pointer-events:none ;" readonly></td>
+                </tr>
+                <tr>
+                    <td>Patient Name</td>
+                    <td>:</td>
+                    <td><input type="text" name="patient-name" id="patient-name" placeholder = "Patient Name" required></td>
+                </tr>
+                <tr>
+                    <td>Patient Age</td>
+                    <td>:</td>
+                    <td><input type="number" name="patient-age" id="patient-age" min='1' max='130' placeholder = "Patient Age" required></td>
+                </tr>
+                <tr>
+                    <td>Blood Group Required</td>
+                    <td>:</td>
+                    <td><input type="text" name="blood-group" id="blood-group" style='pointer-events:none ;' readonly></td>
+                </tr>
+                <tr>
+                    <td>Need to get by</td>
+                    <td>:</td>
+                    <td> <input type="text" name="date" id="date" placeholder="Date" onfocus="(this.type='date')" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" name="time" id="time" placeholder="Time" onfocus="(this.type='time')" required></td>
+                </tr>
+                <tr>
+                    <td>Pint of Blood Required</td>
+                    <td>:</td>
+                    <td><input type="number" id="pint-requred" name="pint-required" min="1" max="12" placeholder = "Amount of pint required" required></td>
+                </tr>
+                <tr>
+                    <td>Cause of requirement</td>
+                    <td>:</td>
+                    <td><textarea name="cause" id="cause" cols="30" rows="10" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan = '3'><input type="submit" name="submit" value = "Post Blood Request"></td>
+                </tr>
+            </table>
+               
             </form>
 
         </div>

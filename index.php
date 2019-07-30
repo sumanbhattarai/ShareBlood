@@ -70,7 +70,7 @@ include("connection.php");
        </div>
        <div class ="options">
            <br><br><br><br><br>
-           <button onclick="window.location.href='signup.html'">Register as Health Center</button> <br><br><br>
+           <button onclick="window.location.href='signup.php'">Register as Health Center</button> <br><br><br>
            <button>Post Blood Request</button><br><br><br>
            <button>See the Blood Requests</button>
 
@@ -89,7 +89,7 @@ include("connection.php");
     </div>
 
    <!-- JavaScript file -->
-    <script src="script.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
 

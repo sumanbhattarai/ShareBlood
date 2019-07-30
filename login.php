@@ -62,7 +62,7 @@
             <hr>
             <span id="or">or</span>
             <br>
-            <button onclick="window.location.href='signup.html'"> Create Account</button>
+            <button onclick="window.location.href='signup.php'"> Create Account</button>
 
         </div>
 

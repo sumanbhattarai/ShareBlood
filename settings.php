@@ -9,7 +9,7 @@ if($email==false)
     header('location:index.php');
 }
 
-$query = " SELECT * FROM try WHERE EMAIL='$email' " ;
+$query = " SELECT * FROM hospital WHERE email='$email' " ;
 $data = mysqli_query($conn , $query) ;
 $result = mysqli_fetch_assoc($data);
 
@@ -32,7 +32,7 @@ $result = mysqli_fetch_assoc($data);
             <span id="shareblood">ShareBlood</span>
              <div class="hospital-detail">
                 <div class="hospital-name-box">
-                    <a href="home.php">Gandaki Medical College</a>
+                    <a href="home.php"><?php echo $result['name']; ?></a>
                 </div>
                 <div class="options-box">
                     <i class="fas fa-bell" id="bell" title="Notification"></i>
@@ -56,13 +56,13 @@ $result = mysqli_fetch_assoc($data);
             <table id="setting-table">
                 <tr id="tr1">
                     <td>Name</td>
-                    <td>Gandaki Medical College</td>
+                    <td><?php echo $result['name']; ?></td>
                     <td><i class="fa fa-edit" id="edit1"></i></td>
                     <td>Edit</td>
                 </tr>
                 <tr id="tr2">
                     <td>Email</td>
-                    <td>gmc@gmail.com</td>
+                    <td><?php echo $result['email']; ?></td>
                     <td><i class="fa fa-edit" id="edit2"></i></td>
                     <td>Edit</td>
                 </tr>
@@ -74,25 +74,25 @@ $result = mysqli_fetch_assoc($data);
                 </tr>
                 <tr id="tr4">
                     <td>Telephone</td>
-                    <td>0565-70053</td>
+                    <td><?php echo $result['telephone']; ?></td>
                     <td><i class="fa fa-edit" id="edit4"></i></td>
                     <td>Edit</td>
                 </tr>
                 <tr id="tr5">
                     <td>State</td>
-                    <td>State no. 4</td>
+                    <td><?php echo 'State no. '.$result['state']; ?></td>
                     <td><i class="fa fa-edit" id="edit5"></i></td>
                     <td>Edit</td>
                 </tr>
                 <tr id="tr6">
                     <td>District</td>
-                    <td>Kaski</td>
+                    <td><?php echo $result['district']; ?></td>
                     <td><i class="fa fa-edit" id="edit6"></i></td>
                     <td>Edit</td>
                 </tr>
                 <tr id="tr7">
                     <td>City / Village</td>
-                    <td>Pokhara</td>
+                    <td><?php echo $result['city / village']; ?></td>
                     <td><i class="fa fa-edit" id="edit7"></i></td>
                     <td>Edit</td>
                 </tr>

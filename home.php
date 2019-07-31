@@ -10,7 +10,7 @@ if($email==false)
     header('location:index.php');
 }
 
-$query = " SELECT * FROM try WHERE EMAIL='$email' " ;
+$query = " SELECT * FROM hospital WHERE email='$email' " ;
 $data = mysqli_query($conn , $query) ;
 $result = mysqli_fetch_assoc($data);
 
@@ -33,13 +33,8 @@ $result = mysqli_fetch_assoc($data);
             <img src = "images/trans.png">
             <span id="shareblood">ShareBlood</span>
              <div class="hospital-detail">
-                <!--<div class="hospital-name-box">
-                   <a href="home.php" class="hospital-name">GANDAKI MEDICAL COLLEGE</a>
-                   <a href="home.php" class="hospital-logo"> <i class="fas fa-hospital"></i> </a>
-                   
-                </div> -->
                 <div class="hospital-name-box">
-                    <a href="home.php">Gandaki Medical College</a>
+                    <a href="home.php"><?php  echo $result['name'] ;   ?></a>
                 </div>
                 <div class="options-box">
                     <i class="fas fa-bell" id="bell" title="Notification"></i>
@@ -59,12 +54,12 @@ $result = mysqli_fetch_assoc($data);
             <img src="images/logo.png" id="pp" alt="">
         
         </div>
-        <span id="account-name">Gandaki Medical College</span>
+        <span id="account-name"><?php  echo $result['name'] ;   ?></span>
         <div class="profile-info">
             <br><br><br>
-             <i class="fas fa-mobile-alt"></i> 0565-70053 <br> <br>
-             <i class="fas fa-map-marker-alt"></i> State 4 - Kaski - Pokhara <br> <br>
-             <i class="fas fa-envelope"></i> <?php echo $result['EMAIL'] ; ?> <br>
+             <i class="fas fa-mobile-alt"></i> <?php  echo $result['telephone'] ;   ?> <br> <br>
+             <i class="fas fa-map-marker-alt"></i> <?php  echo 'State '.$result['state'].' - '.$result['district'].' - '.$result['city / village'] ;   ?> <br> <br>
+             <i class="fas fa-envelope"></i> <?php echo $result['email'] ; ?> <br>
                 <hr>
           
              Has someone donated blood ? Don't forget to register them here.

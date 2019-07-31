@@ -43,7 +43,7 @@ $result = mysqli_fetch_assoc($data);
                 </div>
                 <div class="options-box">
                     <i class="fas fa-bell" id="bell" title="Notification"></i>
-                    <div class="notification-count">1</div>
+                    <div class="notification-count">99</div>
                     <i class="fas fa-cogs" id="setting" title="Setting" onclick="window.location.href='settings.php'"></i>
                 </div>
                 <div class="logout-box">
@@ -206,7 +206,7 @@ $result = mysqli_fetch_assoc($data);
            
         </div>
     </div>
-s
+
     <!-- Footer -->
     <div class="footer">
             | <a href="about.html" target="_Blank">About</a>
@@ -222,13 +222,3 @@ s
     
 </body>
 </html>
-
-
-<?php
-
-// echo "Welcome" . "<br>" ;
-// echo "ID : ".$result['ID']."<br>"; 
-// echo "Email : ".$result['EMAIL']."<br>";
-// echo "Password : " . $result['PASSWORD']."<br>";
-
-?>

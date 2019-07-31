@@ -61,6 +61,8 @@ closeBtn.addEventListener('mouseover' , function(){
 function popup()
 {
     document.querySelector('.box-blood-request').style.display = 'flex' ;
+    
+    //get the selected blood group
     document.getElementById('blood-group').value  = document.getElementById('blood-group-for-posting').value ;
     return false ;
 
@@ -70,5 +72,16 @@ closeBtn.addEventListener('click' , function(){
     document.querySelector('.box-blood-request').style.display = 'none' ;
 });
 
-//get the selected blood group
+// post status on submit
+function postStatus()
+{
+    document.querySelector('.box-blood-request').style.display = 'none' ;
+    document.querySelector('.success-box').style.display="flex" ;
+    return false ;
+}
+
+document.getElementById('success-ok').addEventListener('click' , function(){
+    document.querySelector('.success-box').style.display="none" ;
+    
+});
 

@@ -129,7 +129,7 @@ $result = mysqli_fetch_assoc($data);
         <div class='popup-blood-request'>
             <div><i class="fas fa-times-circle" id="close-btn"></i></div>
             <br>
-            <form action="">
+            <form action="" method="POST" onsubmit="return postStatus();">
             <table>
                 <tr>
                     <td>Hospital Name</td>
@@ -192,6 +192,20 @@ $result = mysqli_fetch_assoc($data);
 
     </div>
 
+    <!-- Success box after post -->
+    <div class="success-box">
+        <div class="success-inner-box">
+            <div class="success-content">
+                <i class="fas fa-check-circle" id="tick-icon"></i>
+                <span id="success-text">Sucessfully, posted !</span>
+                <br><br>
+                <button id="success-ok">OK</button>
+
+            </div>
+           
+        </div>
+    </div>
+s
     <!-- Footer -->
     <div class="footer">
             | <a href="about.html" target="_Blank">About</a>

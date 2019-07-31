@@ -219,11 +219,17 @@ body
 
  .profile-picture
  {
-     border : 3px solid #707070 ;
+     border : 3px solid #ffffff ;
+     outline : 1px solid #707070 ;
+     -moz-outline-radius: 100px;
      position: absolute;
      border-radius: 100px;
+     height: 200px;
+     width: 200px;
      left : 43% ;
      top : 100px;
+     overflow: hidden;
+     box-shadow:9px 9px 19px -8px rgba(22,20,21,0.72) ;
  }
 
  .profile-picture-onhover
@@ -257,6 +263,11 @@ body
  .change-pp:hover 
  {
      cursor: pointer;
+ }
+
+ #pp
+ {
+     height: ;
  }
 
  

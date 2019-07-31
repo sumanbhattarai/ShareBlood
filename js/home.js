@@ -85,3 +85,18 @@ document.getElementById('success-ok').addEventListener('click' , function(){
     
 });
 
+
+
+// On clicking camera icon
+
+document.getElementById('camera-icon').addEventListener('click' , function(){
+   // trigger the file upload button
+    document.getElementById('upload-image').click();
+});
+
+document.getElementById('upload-image').addEventListener('change' , function(){
+    // trigger the image submit  button.
+    document.getElementById('submit-image').click();
+});
+
+

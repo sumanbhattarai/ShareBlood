@@ -1,6 +1,7 @@
 
 <?php
 session_start(); 
+error_reporting(0);
 include('connection.php');
 $email = $_SESSION['email'] ;
 
@@ -48,12 +49,45 @@ $result = mysqli_fetch_assoc($data);
             
     </div>
 
+    <!-- Profile Section -->
     <div class="profile-section">
         <div class="profile-picture profile-picture-onhover">
-            <div class="change-pp"><i class="fas fa-camera" title="Change Profile Picture"></i></div>
-            <img src="images/logo.png" id="pp" alt="">
+            <div class="change-pp"><i class="fas fa-camera" id="camera-icon" title="Change Profile Picture"></i></div>
+            <img src="<?php echo $result['picture']; ?>" id="pp" alt="">
         
         </div>
+        <form action="" method="POST" style="display:none ;" enctype="multipart/form-data" >
+        <input type="file" id="upload-image" name="uploadimage" accept = "image/*" style="display:none ;"> 
+        <input type="submit" name="submitimage" id="submit-image">
+        </form>
+
+        <!-- PHP code for image upload -->
+        <?php
+        if($_POST['submitimage'])
+        {
+            $filename = $_FILES["uploadimage"]["name"] ;
+            $tempname = $_FILES["uploadimage"]["tmp_name"] ;
+            $filename = md5($filename. time());
+            $folder = "images/uploaded/".$filename;
+            echo $folder ;
+            move_uploaded_file($tempname , $folder);
+
+            $query = "UPDATE hospital set picture = '$folder' where email = '$email' " ;
+            mysqli_query($conn , $query) ;
+            header('location:home.php');
+            
+
+        }
+       
+
+
+
+
+
+
+        ?>
+        
+
         <span id="account-name"><?php  echo $result['name'] ;   ?></span>
         <div class="profile-info">
             <br><br><br>

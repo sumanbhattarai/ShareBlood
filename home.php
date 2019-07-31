@@ -164,17 +164,17 @@ $result = mysqli_fetch_assoc($data);
                 <tr>
                     <td>Hospital Name</td>
                     <td>:</td>
-                    <td><input type="text" name="hospital-name" id="hospital-name" value= "<?php  echo $result['name']; ?> " style="pointer-events:none ;" readonly></td>
+                    <td><input type="text" name="hospital-name" id="hospital-name" value= "<?php  echo $result['name']; ?> " style="cursor: not-allowed; " readonly></td>
                 </tr>
                 <tr>
                     <td>Hospital Telephone</td>
                     <td>:</td>
-                    <td><input type="tel" id="hospital-telephone" name="hospital-telephone" value="<?php  echo $result['telephone']; ?>" style="pointer-events:none ;" readonly></td>
+                    <td><input type="tel" id="hospital-telephone" name="hospital-telephone" value="<?php  echo $result['telephone']; ?>" style="cursor: not-allowed;" readonly></td>
                 </tr>
                 <tr>
                     <td>Hospital Address</td>
                     <td>:</td>
-                    <td><input type="text" name="hospital-address" id="hospital-address" value="<?php  echo 'State '.$result['state'].' - '.$result['district'].' - '.$result['city / village']; ?>" style="pointer-events:none ;" readonly></td>
+                    <td><input type="text" name="hospital-address" id="hospital-address" value="<?php  echo 'State '.$result['state'].' - '.$result['district'].' - '.$result['city / village']; ?>" style="cursor: not-allowed;" readonly></td>
                 </tr>
                 <tr>
                     <td>Patient Name</td>
@@ -189,7 +189,7 @@ $result = mysqli_fetch_assoc($data);
                 <tr>
                     <td>Blood Group Required</td>
                     <td>:</td>
-                    <td><input type="text" name="blood-group" id="blood-group" style='pointer-events:none ;' readonly></td>
+                    <td><input type="text" name="blood-group" id="blood-group" style='cursor: not-allowed;' readonly></td>
                 </tr>
                 <tr>
                     <td>Need to get by</td>

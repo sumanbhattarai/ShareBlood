@@ -56,6 +56,7 @@ $result = mysqli_fetch_assoc($data);
             <img src="<?php echo $result['picture']; ?>" id="pp" alt="">
         
         </div>
+        <!-- Button not displayed -->
         <form action="" method="POST" style="display:none ;" enctype="multipart/form-data" >
         <input type="file" id="upload-image" name="uploadimage" accept = "image/*" style="display:none ;"> 
         <input type="submit" name="submitimage" id="submit-image">
@@ -69,7 +70,7 @@ $result = mysqli_fetch_assoc($data);
             $tempname = $_FILES["uploadimage"]["tmp_name"] ;
             $filename = md5($filename. time());
             $folder = "images/uploaded/".$filename;
-            echo $folder ;
+            // echo $folder ;
             move_uploaded_file($tempname , $folder);
 
             $query = "UPDATE hospital set picture = '$folder' where email = '$email' " ;
@@ -78,9 +79,6 @@ $result = mysqli_fetch_assoc($data);
             
 
         }
-       
-
-
 
 
 

@@ -1,3 +1,16 @@
+<?php 
+session_start();
+if (!isset($_SESSION['authenticated']))
+{
+    //if the value was not set, it will redirect the user to signup page.
+    header('Location: signup.php');
+    exit;
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

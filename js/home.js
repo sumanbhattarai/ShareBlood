@@ -1,22 +1,22 @@
 
+const profilePicture = document.querySelector('.profile-picture') ;
+const changePP = document.querySelector('.change-pp') ;
   
 function intial()
 {
-    document.querySelector('.profile-picture').classList.remove('profile-picture-onhover');
-    document.querySelector('.change-pp').style.display = "none" ;
+    profilePicture.classList.remove('profile-picture-onhover');
+    changePP.style.display = "none" ;
 
 }
 intial();
 
-
-
-document.querySelector('.profile-picture').addEventListener('mouseover' , function(){
-    document.querySelector('.profile-picture').classList.add('profile-picture-onhover');
-    document.querySelector('.change-pp').style.display = "unset" ;
+profilePicture.addEventListener('mouseover' , function(){
+    profilePicture.classList.add('profile-picture-onhover');
+    changePP.style.display = "unset" ;
    
 });
 
-document.querySelector('.profile-picture').addEventListener('mouseout' , intial);
+profilePicture.addEventListener('mouseout' , intial);
 
 function logoutClick()
 {

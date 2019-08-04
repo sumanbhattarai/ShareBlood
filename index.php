@@ -72,7 +72,7 @@ include('modules/checkSession.php') ;
            <br><br><br><br><br><br><br>
            <button onclick="window.location.href='signup.php'">Register as Health Center</button> <br><br><br>
            <!-- <button>Post Blood Request</button><br><br><br> -->
-           <button>See the Blood Requests</button>
+           <button onclick="window.location.href='bloodRequests.php'">See the Blood Requests</button>
            
            
 

@@ -1,19 +1,8 @@
 
 <?php
-session_start(); 
 error_reporting(0);
-include('connection.php');
-$email = $_SESSION['email'] ;
-
-if($email==false)
-{
-
-    header('location:index.php');
-}
-
-$query = " SELECT * FROM hospital WHERE email='$email' " ;
-$data = mysqli_query($conn , $query) ;
-$result = mysqli_fetch_assoc($data);
+include('modules/connection.php');
+include('modules/session.php') ;
 
 ?>
 
@@ -64,25 +53,7 @@ $result = mysqli_fetch_assoc($data);
 
         <!-- PHP code for image upload -->
         <?php
-        if($_POST['submitimage'])
-        {
-            $filename = $_FILES["uploadimage"]["name"] ;
-            $tempname = $_FILES["uploadimage"]["tmp_name"] ;
-            $filename = md5($filename. time());
-            $folder = "images/uploaded/".$filename;
-            // echo $folder ;
-            move_uploaded_file($tempname , $folder);
-
-            $query = "UPDATE hospital set picture = '$folder' where email = '$email' " ;
-            mysqli_query($conn , $query) ;
-            header('location:home.php');
-            
-
-        }
-
-
-
-
+        include('modules/profileChange.php') ;
         ?>
         
 

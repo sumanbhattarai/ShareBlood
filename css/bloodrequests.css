@@ -1,0 +1,81 @@
+body
+{
+    margin:0 ;
+    padding: 0;
+}
+
+/* Fonts */
+@font-face
+{
+    font-family: HelveticaNeueCondensedBlack ;
+    src : url(../fonts/HelveticaNeueBlackCond.otf);
+}
+@font-face
+{
+    font-family: HelveticaNeueMedium ; 
+    src : url(../fonts/HelveticaNeueMedium.otf);
+}
+@font-face
+{
+    font-family: HelveticaNeueThin ;
+    src : url(../fonts/HelveticaNeueThin.otf);
+}
+@font-face
+{
+    font-family: HelveticaNeueCondensedBold ;
+    src: url(../fonts/HelveticaNeueCondensedBold.ttf);
+}
+
+/* Navbar */
+
+.nav
+{
+    background-color: #C7001A;
+    height: 70px;
+}
+
+.nav img
+{
+    height: 80px;
+    width: 80px ;
+    margin-top : -5px;
+}
+
+#shareblood
+{
+    color : white ;
+    font-family: HelveticaNeueCondensedBlack ;
+    font-size: 25px;
+    position: absolute ;
+    top:22px;
+    margin-left:-10px;
+}
+
+
+/* Body Section */
+
+.request-post-box
+{
+    /* border : 2px solid #C7001A ; */
+    width : 70% ;
+    margin-top : 100px ;
+    margin-left : 15% ;
+    margin-right : 15% ;
+    /* height : 400px; */
+}
+
+table
+{
+    font-size: 16px;
+    color: #707070 ;
+    font-family: HelveticaNeueThin ;
+    width : 50% ;
+    margin-left : 25% ;
+    padding: 20px;
+    /* border : 2px solid green ; */
+    border-radius : 25px;
+    box-shadow: 5px 5px 15px 5px #0A0C0C ;
+
+
+
+}

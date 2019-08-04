@@ -68,10 +68,13 @@ include('modules/checkSession.php') ;
 
        </div>
        <div class ="options">
-           <br><br><br><br><br>
+            
+           <br><br><br><br><br><br><br>
            <button onclick="window.location.href='signup.php'">Register as Health Center</button> <br><br><br>
-           <button>Post Blood Request</button><br><br><br>
+           <!-- <button>Post Blood Request</button><br><br><br> -->
            <button>See the Blood Requests</button>
+           
+           
 
        </div>
        

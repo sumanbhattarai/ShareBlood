@@ -1,3 +1,5 @@
+
+# ABSTRACT
 Share Blood is a web application with the objective to solve the blood shortage problem. In order to mitigate the problem faced by the victim of not getting the blood in time from the blood banks, hospitals can use Share Blood website in order to retrieve the name of the donors from the nearest location. The people interested in blood donation can register themselves in the site at an ease.
 
 # BACKGROUND

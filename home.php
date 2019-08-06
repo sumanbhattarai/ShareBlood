@@ -163,7 +163,7 @@ include('modules/session.php') ;
                 <tr>
                     <td>Need to get by</td>
                     <td>:</td>
-                    <td> <input type="text" name="date" id="date" placeholder="Date" onfocus="(this.type='date')" required></td>
+                    <td> <input type="text" name="date" id="date" placeholder="Date" onfocus="(this.type='date')" min="<?php echo date("Y-m-d"); ?>" required></td>
                 </tr>
                 <tr>
                     <td></td>

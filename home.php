@@ -67,7 +67,7 @@ include('modules/session.php') ;
           
              Has someone donated blood ? Don't forget to register them here.
              <br> <br>
-             <button >Keep Record</button>
+             <button onclick="window.location.href='record.php'" >Keep Record</button>
         </div>
     </div>
 
@@ -213,7 +213,7 @@ include('modules/session.php') ;
             | <a href="cookies.html" target="_Blank">Cookies Policy</a>
             | <a href="help.html" target="_Blank">Help</a>
             | ShareBlood &copy; 2019 |
-        </div>
+    </div>
 
 
     <script src="js/home.js"></script>

@@ -47,7 +47,7 @@
                 $phoneno = $_POST['phonenumber'];
                 $bloodgroup = $_POST['bloodgroup'];
 
-                $query = "SELECT * FROM donor where status = true and `blood group`='$bloodgroup' and `phone number` = '$phoneno' " ;
+                $query = "SELECT * FROM donor where `blood group`='$bloodgroup' and `phone number` = '$phoneno' " ;
                 $data = mysqli_query($conn , $query) ;
                 $row = mysqli_fetch_assoc($data);
                 if($row!=0)
@@ -92,14 +92,15 @@
                 </tr>
             </table>
             <br><br>
-            <form action="" method="post">
+            <form action="updated.php" method="POST">
+            <!-- To know the donors phone number to next page  -->
+                <input type="text" name="phonenumber" id="" style="display:none ; " value="<?php echo $row['phone number'] ; ?>">
                 <input type="checkbox" required> Agree all terms and conditions.
                 <br><br>
                 <input type="submit" name="submit" value="Update Donor Record">
             </form>
 
             <?php
-
             }
             else
             {

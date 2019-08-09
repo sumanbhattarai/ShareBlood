@@ -211,7 +211,7 @@ body
      margin-top : 10px ;
      margin-left: 8% ;
      margin-right: 8% ;
-     width : 84%; ;
+     width : 84%; 
      height: 300px;
      text-align: center ;
 
@@ -263,14 +263,7 @@ body
  .change-pp:hover 
  {
      cursor: pointer;
- }
-
- #pp
- {
-     height: ;
- }
-
- 
+ } 
 
  #account-name
  {

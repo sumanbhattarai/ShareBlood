@@ -61,7 +61,16 @@ include('modules/session.php') ;
                 $hospitalDistrict = $result['district'];
                 $hospitalCityVillage = $result['city / village'] ;
                 $bloodGroup = $_POST['bloodgroup'];
-                $query = "SELECT * FROM donor where status = true and `blood group`='$bloodGroup'  and state = '$hospitalState' and district = '$hospitalDistrict' and `city / village` = '$hospitalCityVillage' order by rand()   " ;
+                //$currentDate = date('Y-m-d');
+                $query = "SELECT * FROM donor
+                WHERE`blood group`='$bloodGroup'  
+                and state = '$hospitalState' 
+                and district = '$hospitalDistrict' 
+                and `city / village` = '$hospitalCityVillage' 
+                
+                -- and (`last donated` IS NULL or `last donated` < DATEADD(day,-90,GETDATE()))
+                and (`last donated` is null)
+                order by rand()  " ;
                 $data = mysqli_query($conn , $query) ;
                 if (mysqli_num_rows($data) > 0) 
                 {

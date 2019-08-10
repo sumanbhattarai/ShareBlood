@@ -74,18 +74,18 @@ closeBtn.addEventListener('click' , function(){
     document.querySelector('.box-blood-request').style.display = 'none' ;
 });
 
-// post status on submit
-function postStatus()
-{
-    document.querySelector('.box-blood-request').style.display = 'none' ;
-    document.querySelector('.success-box').style.display="flex" ;
-    return false ;
-}
+// // post status on submit
+// function postStatus()
+// {
+//     document.querySelector('.box-blood-request').style.display = 'none' ;
+//     document.querySelector('.success-box').style.display="flex" ;
+//     return false ;
+// }
 
-document.getElementById('success-ok').addEventListener('click' , function(){
-    document.querySelector('.success-box').style.display="none" ;
+// document.getElementById('success-ok').addEventListener('click' , function(){
+//     document.querySelector('.success-box').style.display="none" ;
     
-});
+// });
 
 
 

@@ -173,7 +173,7 @@ include('modules/session.php') ;
                 <tr>
                     <td>Pint of Blood Required</td>
                     <td>:</td>
-                    <td><input type="number" id="pint-requred" name="pint-required" min="1" max="12" placeholder = "Amount of pint required" required></td>
+                    <td><input type="number" id="pint-required" name="pint-required" min="1" max="12" placeholder = "Amount of pint required" required></td>
                 </tr>
                 <tr>
                     <td>Cause of requirement</td>

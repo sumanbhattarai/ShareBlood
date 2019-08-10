@@ -85,7 +85,7 @@
                     </tr>
                     <tr>
                         <td colspan = 3 style="text-align:center ; padding:20px;">
-                            <form action="post" action="userinfo.php">
+                            <form method="post" action="userinfo.php">
                                 <input type="text" name="hospital-email" value="<?php echo $row['email']; ?>" style="display:none ;">
                                 <input type="text" name="patient-name" value="<?php echo $row['patient name']; ?>" style="display:none ;">
                                 <input type="text" name="patient-age" value="<?php echo $row['patient age']; ?>" style="display:none ;">

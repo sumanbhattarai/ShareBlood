@@ -1,0 +1,133 @@
+body
+{
+    margin:0 ;
+    padding: 0;
+}
+
+/* Fonts */
+@font-face
+{
+    font-family: HelveticaNeueCondensedBlack ;
+    src : url(../fonts/HelveticaNeueBlackCond.otf);
+}
+@font-face
+{
+    font-family: HelveticaNeueMedium ; 
+    src : url(../fonts/HelveticaNeueMedium.otf);
+}
+@font-face
+{
+    font-family: HelveticaNeueThin ;
+    src : url(../fonts/HelveticaNeueThin.otf);
+}
+@font-face
+{
+    font-family: HelveticaNeueCondensedBold ;
+    src: url(../fonts/HelveticaNeueCondensedBold.ttf);
+}
+
+/* Navbar */
+
+.nav
+{
+    background-color: #C7001A;
+    height: 70px;
+}
+
+.nav img
+{
+    height: 80px;
+    width: 80px ;
+    margin-top : -5px;
+}
+
+#shareblood
+{
+    color : white ;
+    font-family: HelveticaNeueCondensedBlack ;
+    font-size: 25px;
+    position: absolute ;
+    top:22px;
+    margin-left:-10px;
+}
+
+/* body */
+.main-box
+{
+    /* border : 1px solid black ;  */
+    width : 60% ;
+    margin-left: 20% ;
+    margin-top : 50px;
+    height: 580px;
+    text-align: center ;
+    font-size: 30px;
+    color : #707070 ;
+    font-family: HelveticaNeueCondensedBold ;
+}
+
+.inner-box
+{
+    width : 60% ;
+    height: 500px;
+    margin-left : 20% ;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32);
+
+}
+
+input[type=text]
+{
+    font-family: HelveticaNeueMedium ;
+    font-size: 12px ;
+    color : #313131 ;
+    text-align: center ;
+    width : 60% ;
+    height: 40px;
+    border : 1px solid #313131 ;
+    outline: none ;
+    border-radius: 25px;
+}
+
+select
+{
+    font-family: HelveticaNeueMedium ;
+    font-size: 12px ;
+    color : #313131 ;
+    text-align: center ;
+    width : 60% ;
+    height: 42px;
+    border : 1px solid #313131 ;
+    outline: none ;
+    border-radius: 25px;
+    -moz-appearance: none ;
+
+}
+
+input[type=submit]
+{
+    border-radius: 25px;
+    border: none ;
+    outline: none ;
+    background-color : #C7001A ;
+    font-family: HelveticaNeueCondensedBold ;
+    font-size: 25px;
+    color : #ffffff ;
+    width : 150px; 
+    height: 50px;
+}
+
+input[type=submit]:hover
+{
+    cursor: pointer;
+    background-color: #313131 ;
+}
+
+
+#save-life
+{
+    position: absolute;
+    right : 0% ;
+    top : 21% ;
+    width : 400px;
+    height: auto;
+}

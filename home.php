@@ -128,7 +128,7 @@ include('modules/session.php') ;
         <div class='popup-blood-request'>
             <div><i class="fas fa-times-circle" id="close-btn"></i></div>
             <br>
-            <form action="" method="POST" onsubmit="return postStatus();">
+            <form action="updateRequest.php" method="POST" >
             <table>
                 <tr>
                     <td>Hospital Name</td>
@@ -192,7 +192,7 @@ include('modules/session.php') ;
     </div>
 
     <!-- Success box after post -->
-    <div class="success-box">
+    <!-- <div class="success-box">
         <div class="success-inner-box">
             <div class="success-content">
                 <i class="fas fa-check-circle" id="tick-icon"></i>
@@ -203,7 +203,7 @@ include('modules/session.php') ;
             </div>
            
         </div>
-    </div>
+    </div> -->
 
     <!-- Footer -->
     <div class="footer">

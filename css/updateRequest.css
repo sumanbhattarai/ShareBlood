@@ -1,0 +1,50 @@
+body
+{
+    margin:0 ;
+    padding: 0;
+}
+
+/* Fonts */
+@font-face
+{
+    font-family: HelveticaNeueCondensedBlack ;
+    src : url(../fonts/HelveticaNeueBlackCond.otf);
+}
+@font-face
+{
+    font-family: HelveticaNeueMedium ; 
+    src : url(../fonts/HelveticaNeueMedium.otf);
+}
+@font-face
+{
+    font-family: HelveticaNeueThin ;
+    src : url(../fonts/HelveticaNeueThin.otf);
+}
+@font-face
+{
+    font-family: HelveticaNeueCondensedBold ;
+    src: url(../fonts/HelveticaNeueCondensedBold.ttf);
+}
+
+
+.main-box
+{
+    font-family: HelveticaNeueCondensedBold ;
+    color : #707070 ;
+    /* border : 1px solid black ; */
+    font-size: 30px;
+    height: 700px;
+    text-align: center;
+}
+
+#thumbs-up
+{
+    color : dodgerblue ;
+    font-size: 100px;
+    margin-top : 200px;
+}
+
+#arrow
+{
+    font-size: 30px;
+}

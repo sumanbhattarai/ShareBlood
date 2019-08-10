@@ -10,6 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blood Requests - Share Blood</title>
     <link rel="stylesheet" href="css/bloodrequests.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Philosopher" rel="stylesheet">
 </head>
 <body>
        <!-- NarBar-->
@@ -21,65 +23,87 @@
     <!-- Showing the blood request posts -->
 
     <div class = "request-post-box">
-        <table onmouseover="tableHovered(event)" onmouseout="tableOut(event)">
-            <tr>
-                <td>Patient Name</td>
-                <td>:</td>
-                <td>Danish Iqbal</td>
-            </tr>
-            <tr>
-                <td>Patient Age </td>
-                <td>:</td>
-                <td>21</td>
-            </tr>
-            <tr>
-                <td>Hospital Name</td>
-                <td>:</td>
-                <td>Chitwan Medical College</td>
-            </tr>
-            <tr>
-                <td>Hospital Address</td>
-                <td>:</td>
-                <td>State no. 3 - Chitwan - Bharatpur</td>
-            </tr>
-            <tr>
-                <td>Hospital Telephone</td>
-                <td>:</td>
-                <td>3045345</td>
-            </tr>
-            <tr>
-                <td>Blood Group</td>
-                <td>:</td>
-                <td>AB+</td>
-            </tr>
-            <tr>
-                <td>Need within </td>
-                <td> : </td>
-                <td>2019-04-05</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>2:00 PM</td>
-            </tr>
-            <tr>
-                <td>Pint required</td>
-                <td>:</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>Cause of requirement</td>
-                <td>:</td>
-                <td>Accident</td>
-            </tr>
+        <?php
+        $query = "SELECT * from bloodrequests ORDER BY `date` , `time` " ;
+        $data = mysqli_query($conn , $query) ;
+        if(mysqli_num_rows($data)>0)
+        {
+            while($row = mysqli_fetch_assoc($data))
+            {
 
-        </table>
+        ?>
+                <table>
+                    <tr>
+                        <td>Patient Name</td>
+                        <td>:</td>
+                        <td><?php echo $row['patient name']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Patient Age </td>
+                        <td>:</td>
+                        <td><?php echo $row['patient age']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Hospital Name</td>
+                        <td>:</td>
+                        <td><?php echo $row['hospital name']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Hospital Address</td>
+                        <td>:</td>
+                        <td><?php echo $row['hospital address']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Hospital Telephone</td>
+                        <td>:</td>
+                        <td><?php echo $row['hospital telephone']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Blood Group</td>
+                        <td>:</td>
+                        <td><?php echo $row['blood group']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Need within </td>
+                        <td> : </td>
+                        <td><?php echo $row['date']; ?></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><?php echo $row['time']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Pint required</td>
+                        <td>:</td>
+                        <td><?php echo $row['pint']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Cause of requirement</td>
+                        <td>:</td>
+                        <td><?php echo $row['cause']; ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan = 3 style="text-align:center ; padding:20px;">
+                            <form action="post" action="userinfo.php">
+                                <input type="text" name="hospital-email" value="<?php echo $row['email']; ?>" style="display:none ;">
+                                <input type="text" name="patient-name" value="<?php echo $row['patient name']; ?>" style="display:none ;">
+                                <input type="text" name="patient-age" value="<?php echo $row['patient age']; ?>" style="display:none ;">
+                                <input type="text" name="blood-group" value="<?php echo $row['blood group']; ?>" style="display:none ;">
+                                <input type="submit" value="I want to donate">
+                            </form>
+                        </td>
+                    </tr>
 
-       
+                </table>
+                <br><br>
+            <?php
+                }
+            }
 
+            ?>
     </div>
 
-
+            <script src="js/bloodrequests.js"></script>
 </body>
-<script src="js/bloodrequests.js"></script>
 </html>

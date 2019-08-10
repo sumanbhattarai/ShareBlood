@@ -18,6 +18,7 @@
             $hname = $_POST['hospital-name'];
             $htelephone = $_POST['hospital-telephone'];
             $haddress = $_POST['hospital-address'];
+            $email = $result['email'];
             $pname = $_POST['patient-name'];
             $page = $_POST['patient-age'];
             $bloodgroup = $_POST['blood-group'];
@@ -26,8 +27,8 @@
             $pint = $_POST['pint-required'];
             $cause = $_POST['cause'];
 
-            $query = "INSERT INTO bloodrequests (`patient name` , `patient age` , `hospital name` , `hospital address` , `hospital telephone` , `blood group` , `date` , `time` , `pint` , `cause`) 
-                      VALUES ('$pname' , '$page' , '$hname' , '$haddress' , $htelephone , '$bloodgroup' , '$date' , '$time' , $pint , '$cause' )  " ;
+            $query = "INSERT INTO bloodrequests (`patient name` , `patient age` , `hospital name` , `hospital address` , `hospital telephone` , `email` , `blood group` , `date` , `time` , `pint` , `cause`) 
+                      VALUES ('$pname' , '$page' , '$hname' , '$haddress' , $htelephone , '$email' , '$bloodgroup' , '$date' , '$time' , $pint , '$cause' )  " ;
             
             $data  = mysqli_query( $conn , $query) ;
 

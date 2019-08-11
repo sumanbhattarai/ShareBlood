@@ -97,7 +97,7 @@ body
 .bigbox
 {
     width: 55%;
-    height: 500px;
+    height: 580px;
     margin-top: 50px;
     border : 1px solid #2898E9 ;
     border-radius: 150px ;
@@ -105,7 +105,7 @@ body
 }
 
 
-.bigbox input[type=email] , input[type=tel] , input[type=password] , input[type=text]
+.bigbox input[type=email] , input[type=tel] , input[type=password] , input[type=text] , #city-village
 {
     font-family: HelveticaNeueMedium ;
     text-align: center ;
@@ -117,6 +117,39 @@ body
     outline: none;
     border: 1px solid #707070 ;
 
+}
+
+select
+{
+    height: 55px;
+    border: 1px solid #707070 ;
+    outline: none;
+    font-family: HelveticaNeueMedium ;
+    text-align: center ;
+    -moz-appearance: none ;
+    background: rgba(255,255,255,0);
+    color : #707070 ;
+
+}
+
+#state
+{
+    width: 40%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius : 25px;
+}
+
+#district
+{
+    width : 40% ;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius : 25px;
+
+}
+
+#city-village
+{
+    height: 55px;
 }
 
 #agree
@@ -136,7 +169,7 @@ body
 
 .bigbox input[type=submit] 
 {
-    width: 45% ;
+    width: 40% ;
     height : 45px;
     background-color: #C7001A ;
     border-radius: 25px;
@@ -144,14 +177,15 @@ body
     outline: none;
     color : #ffffff;
     font-size: 15px;
-    font-family: HelveticaNeueMedium ;
-    margin-top : 3% ;
+    font-family: HelveticaNeueCondensedBold ;
+    margin-top : 7px ;
 
 }
 
 .bigbox input[type=submit]:hover
 {
     cursor: pointer;
+    background-color: #313131 ;
 }
 
 .secondbox

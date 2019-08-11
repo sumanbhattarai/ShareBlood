@@ -25,18 +25,28 @@
             </div>
             <div class="bigbox">
                 <br><br><br>
-                <form action="verify.html" onsubmit="return validate()">
-                    <input type="text" name="name" id="name" placeholder="Hospital Name" ><br><br>
-                    <input type="email" name="email" id="email" placeholder="Email" ><br><br>
-                    <input type="password" name="password" id="password" placeholder="Password" ><br><br>
-                    <input type="text" name="location" id="location" placeholder="Location" ><br><br>
-                    <input type="tel" name="telephone" id="telephone" placeholder="Telephone Number" ><br><br>
-                    <input type="checkbox" name="" id="checkagree"> <span id="agree">Agree all terms & Conditions</span> <br><span id="erroragree"></span><br>
+                <form action="verify.php" method="POST">
+                    <input type="text" name="name" id="name" placeholder="Hospital Name" required ><br><br>
+                    <input type="email" name="email" id="email" placeholder="Email" required ><br><br>
+                    <input type="password" name="password" id="password" placeholder="Password" required ><br><br>
+                    <select name="state" id="state" required>
+                       <option value="" disabled selected>State</option>
+                       <option value="4">4</option>
+                   </select>
+                   <select name="district" id="district" required>
+                       <option value="" disabled selected>District</option>
+                       <option value="Kaski">Kaski</option>
+                   </select><br><br>
+                   <select name="city-village" id="city-village" required>
+                       <option value="" disabled selected>City / Village</option>
+                       <option value="Pokhara">Pokhara</option>
+                   </select> <br><br>
+                    <input type="tel" name="telephone" id="telephone" placeholder="Telephone Number" required ><br><br>
+                    <input type="checkbox" name="" id="checkagree" required> <span id="agree">Agree all terms & Conditions</span> <br>
                     <input type="submit" value="Continue">
 
 
                 </form>
-
             </div>
 
         </div>

@@ -60,6 +60,8 @@
         | <a href="help.html" target="_Blank">Help</a>
         | ShareBlood &copy; 2019 |
     </div>
+
+    <script src="js/login.js"></script>
     
 </body>
 </html>

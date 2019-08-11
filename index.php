@@ -1,5 +1,6 @@
 <?php
 include('modules/checkSession.php') ;
+include('modules/login.php');
 ?>
 
 <!DOCTYPE html>
@@ -39,37 +40,51 @@ include('modules/checkSession.php') ;
 
        </div>
        <div class = "donnorregister">
-           <br><br><br>
+           
            <span id="request">Get a call and save a life ?</span> <br><br>
            <div class ="gatherinformation">
-               <form action="">
+               <form action="donorsuccess.php" method="post">
                    <br><br>
                    <input type="text" name = "fullname" placeholder="Full Name" required> <br><br>
                    <input type="tel" name = "phonenumber" placeholder="Phone Number" required> <br><br>
-                   <input type="text" name="address" placeholder="State - District - City" required> <br><br>
-                   <select name="" id="" class="round" required>
-                       <option value="" disabled selected>Select your Blood Group</option>
-                       <option value="">A+</option>
-                       <option value="">A-</option>
-                       <option value="">B+</option>
-                       <option value="">B-</option>
-                       <option value="">O+</option>
-                       <option value="">O-</option>
-                       <option value="">AB+</option>
-                       <option value="">AB-</option>
+                   <select name="state" id="state" required>
+                       <option value="" disabled selected>State</option>
+                       <option value="4">4</option>
                    </select>
+                   <select name="district" id="district" required>
+                       <option value="" disabled selected>District</option>
+                       <option value="Kaski">Kaski</option>
+                   </select><br><br>
+                   <select name="city-village" id="city-village" required>
+                       <option value="" disabled selected>City / Village</option>
+                       <option value="Pokhara">Pokhara</option>
+                   </select>
+                   <br><br>
+                   <select name="bloodgroup" id="blood-group" class="round" required>
+                       <option value="" disabled selected>Select your Blood Group</option>
+                       <option value="A+">A+</option>
+                       <option value="A-">A-</option>
+                       <option value="B+">B+</option>
+                       <option value="B-">B-</option>
+                       <option value="O+">O+</option>
+                       <option value="O-">O+</option>
+                       <option value="AB+">AB+</option>
+                       <option value="AB-">AB-</option>
+                   </select>
+                   <br><br>
+                   <input type="checkbox" required> <span id="agree-text"> Agree , i haven't donated since 3 months. </span>
                    <br><br>
                    <input type="submit" name="" value="Be a Donor">
                </form>
                <br>
-               <span id="question"><a href="https://www.brmsonline.com/blog/wellness/healthcare/2018/benefits-of-blood-donation" target="_blank">Why should i donate blood ?</a></span>
+               <span id="question"><a href="editDonor.php" target="_blank">Already a donor ? Edit your information.</a></span>
 
            </div>
 
        </div>
        <div class ="options">
             
-           <br><br><br><br><br><br><br>
+           <br><br><br><br><br><br>
            <button onclick="window.location.href='signup.php'">Register as Health Center</button> <br><br><br>
            <!-- <button>Post Blood Request</button><br><br><br> -->
            <button onclick="window.location.href='bloodRequests.php'">See the Blood Requests</button>
@@ -94,7 +109,3 @@ include('modules/checkSession.php') ;
     <script src="js/index.js"></script>
 </body>
 </html>
-
-<?php  
-include('modules/login.php');
-?>

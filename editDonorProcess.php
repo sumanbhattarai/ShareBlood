@@ -43,8 +43,8 @@
                <form action="editDonorSuccess.php" method="post">
                    <br><br>
                    <input type="text" name="id" value="<?php echo $result['id']; ?>" style="display:none ;">
-                   <input type="text" name = "fullname" value="<?php echo $result['name'] ; ?>" onkeypress="submitBtn()"> <br><br>
-                   <input type="text" name = "phonenumber" value="<?php echo $result['phone number'] ; ?>" onkeypress="submitBtn()" > <br><br>
+                   <input type="text" name = "fullname" value="<?php echo $result['name'] ; ?>" onkeypress="submitBtn()" required> <br><br>
+                   <input type="text" name = "phonenumber" value="<?php echo $result['phone number'] ; ?>" onkeypress="submitBtn()" pattern="[9]{1}[0-9]{9}" required > <br><br>
                    <select name="state" id="state" onchange="submitBtn()">
                        <option value="" disabled >State</option>
                        <option value="4" <?php if($result['state']==4) echo "selected" ?>>4</option>

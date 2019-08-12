@@ -264,6 +264,14 @@ select
     color : inherit ;
 }
 
+#phone-error
+{
+    color : #C7001A ;
+    font-size: 12px; 
+    text-align: center ;
+    font-family: HelveticaNeueMedium;
+}
+
 
 /* Options */
 .options

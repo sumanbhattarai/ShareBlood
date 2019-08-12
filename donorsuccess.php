@@ -21,9 +21,22 @@
             $cityvillage = $_POST['city-village'];
             $bloodgroup = $_POST['bloodgroup'];
 
-            $query = "INSERT INTO donor (`name` , `phone number` , `state` , `district` , `city / village` , `blood group`)       
+            $sql = "SELECT * FROM donor WHERE `phone number` = '$phonenumber' " ;
+            $result = mysqli_query($conn , $sql);
+            $total = mysqli_num_rows($result) ;
+            if($total !=0)
+            {
+                header("Location: index.php?phonenumber=alreadyExists");
+                exit();
+            }
+            else
+            {
+                $query = "INSERT INTO donor (`name` , `phone number` , `state` , `district` , `city / village` , `blood group`)       
                        VALUES ('$name' , '$phonenumber' , $state  , '$district' , '$cityvillage' , '$bloodgroup') " ;
-            $data = mysqli_query($conn , $query);
+                $data = mysqli_query($conn , $query);
+                
+            }
+            
 
 ?>
 

@@ -42,11 +42,21 @@ include('modules/login.php');
        <div class = "donnorregister">
            
            <span id="request">Get a call and save a life ?</span> <br><br>
+           <span id="phone-error">
+           <?php
+           if(isset($_GET['phonenumber'])) {
+                if($_GET['phonenumber']== 'alreadyExists') {
+                    echo  "*Phone number already exists.";
+                }
+            }
+           ?>
+           </span>
+
            <div class ="gatherinformation">
                <form action="donorsuccess.php" method="post">
                    <br><br>
                    <input type="text" name = "fullname" placeholder="Full Name" required> <br><br>
-                   <input type="tel" name = "phonenumber" placeholder="Phone Number" required> <br><br>
+                    <input type="tel" name = "phonenumber" placeholder="Phone Number" pattern="[9]{1}[0-9]{9}" required> <br><br>
                    <select name="state" id="state" required>
                        <option value="" disabled selected>State</option>
                        <option value="4">4</option>

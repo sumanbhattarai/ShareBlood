@@ -59,6 +59,17 @@
     </div>
     <img src="images/savelife.png" alt="Save life" id="save-life">
 
+
+            <!-- Footer -->
+            <div class="footer">
+            | <a href="about.html" target="_Blank">About</a>
+            | <a href="privacy.html" target="_Blank">Privacy Policy</a>
+            | <a href="terms.html" target="_Blank">Terms</a>
+            | <a href="cookies.html" target="_Blank">Cookies Policy</a>
+            | <a href="help.html" target="_Blank">Help</a>
+            | ShareBlood &copy; 2019 |
+    </div>
+
     <!-- JavaScript -->
     <script src="js/userinfo.js"></script>
 

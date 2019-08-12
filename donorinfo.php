@@ -126,6 +126,7 @@
 
     </div>
 
+
             <!-- Footer -->
     <div class="footer">
             | <a href="about.html" target="_Blank">About</a>
@@ -135,5 +136,8 @@
             | <a href="help.html" target="_Blank">Help</a>
             | ShareBlood &copy; 2019 |
     </div>
+
+    <!-- JavaScript -->
+    <script src="js/donorinfo.js"></script>
 </body>
 </html>

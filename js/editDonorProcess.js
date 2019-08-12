@@ -19,6 +19,16 @@ function submitBtn()
     submit.classList.add("active"); // add active class
 }
 
+//onclicing submit button this function will be executed
+function ask()
+{
+    const choice = confirm('Are you sure , you want to deactivate ?') ;
+    if(choice==false)
+    {
+        return false ;
+    }
+}
+
 
 
 const shareBlood = document.getElementById('shareblood') ;

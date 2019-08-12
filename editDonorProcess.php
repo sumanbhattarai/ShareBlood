@@ -1,5 +1,5 @@
 <?php
-include('modules/connection.php');
+    include('modules/connection.php');
     if(!isset($_POST['submit'])) {
         header("Location: editDonor.php");
     } else {
@@ -74,6 +74,29 @@ include('modules/connection.php');
                 </form>
 
 
+    </div>
+
+    <div class="side-box">
+    <br><br><br><br><br><br>
+        <?php  
+        if($result['status']==true)
+        {
+            echo "After clicking on button below , your will never receive a call for donation anymore." ;
+        }
+        else
+        {
+            echo "Looks like you have deactivated earlier. Click the button below to restart receiving call for donation." ;
+        }
+        
+        ?>
+            
+        <br><br>
+        <form action="modules/deactivateActivate.php" method="POST" onsubmit=" return ask()">
+            <input type="text" name="id" value="<?php echo $result['id']; ?>" style="display:none ;">
+            <input type="submit" name="deactivateActivate" value="<?php if($result['status']==true) {echo "Deactivate" ; } else { echo "Activate"; } ?>">
+        </form>
+        <br><br>
+       <mark> Note </mark> : You can Deactivate / Activate at any time .
     </div>
 
 

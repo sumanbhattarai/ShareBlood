@@ -294,6 +294,24 @@ tr:hover
     cursor: pointer ;
 }
 
+/* Gotot top */
+#goto-top
+{
+    position: fixed ;
+    cursor: pointer ;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 50px;
+    color : #707070 ;
+    display : none ;
+}
+
+#goto-top:hover
+{
+    color : #C7001A ;
+}
+
 /* Footer */
 .footer
 {

@@ -104,6 +104,9 @@
             ?>
     </div>
 
+    <!-- Go to top button -->
+    <i class="fas fa-arrow-alt-circle-up" id="goto-top" title="Goto top" onclick="gotoTop()"></i>
+
         <!-- Footer -->
         <div class="footer">
             | <a href="about.html" target="_Blank">About</a>

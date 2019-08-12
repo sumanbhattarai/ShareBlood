@@ -28,7 +28,7 @@
                 }
             }
         ?>
-        <form action="modules/editDonorProcess.php" method="POST">
+        <form action="editDonorProcess.php" method="POST">
             <input type="text" name="phonenumber" placeholder="Phone Number" requrired> 
             <br><br>
             <input type="submit" name="submit" value="Submit">

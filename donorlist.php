@@ -75,7 +75,8 @@ include('modules/session.php') ;
                 $bloodGroup = $_POST['bloodgroup'];
                 //$currentDate = date('Y-m-d');
                 $query = "SELECT * FROM donor
-                WHERE`blood group`='$bloodGroup'  
+                WHERE`blood group`='$bloodGroup' 
+                and `status` is true 
                 and state = '$hospitalState' 
                 and district = '$hospitalDistrict' 
                 and `city / village` = '$hospitalCityVillage' 

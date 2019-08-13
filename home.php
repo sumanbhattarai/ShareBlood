@@ -148,7 +148,7 @@ include('modules/session.php') ;
                 <tr>
                     <td>Patient Name</td>
                     <td>:</td>
-                    <td><input type="text" name="patient-name" id="patient-name" placeholder = "Patient Name" required></td>
+                    <td><input type="text" name="patient-name" id="patient-name" placeholder = "Patient Name" pattern="[A-Za-z]+\s[A-Za-z]+" required></td>
                 </tr>
                 <tr>
                     <td>Patient Age</td>

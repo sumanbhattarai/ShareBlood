@@ -55,8 +55,8 @@ include('modules/login.php');
            <div class ="gatherinformation">
                <form action="donorsuccess.php" method="post">
                    <br><br>
-                   <input type="text" name = "fullname" placeholder="Full Name" required> <br><br>
-                    <input type="tel" name = "phonenumber" placeholder="Phone Number" pattern="[9]{1}[0-9]{9}" required> <br><br>
+                   <input type="text" name = "fullname" placeholder="Full Name" pattern="[A-Za-z]+\s[A-Za-z]+" required> <br><br>
+                    <input type="text" name = "phonenumber" placeholder="Phone Number" pattern="[9]{1}[0-9]{9}" required> <br><br>
                    <select name="state" id="state" required>
                        <option value="" disabled selected>State</option>
                        <option value="4">4</option>
@@ -97,7 +97,7 @@ include('modules/login.php');
            <br><br><br><br><br><br>
            <button onclick="window.location.href='signup.php'">Register as Health Center</button> <br><br><br>
            <!-- <button>Post Blood Request</button><br><br><br> -->
-           <button onclick="window.location.href='bloodRequests.php'">See the Blood Requests</button>
+           <button onclick="window.location.href='filterbloodrequest.php'">See the Blood Requests</button>
            
            
 

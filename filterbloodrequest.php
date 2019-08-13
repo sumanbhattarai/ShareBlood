@@ -55,7 +55,7 @@
         <span id="or">OR</span>
         <hr>
         <br><br>
-        <i class="fas fa-arrow-circle-right" id="arrow"></i> <a href="" id="see-all">See all the blood request without filter</a>
+        <i class="fas fa-arrow-circle-right" id="arrow"></i> <a href="bloodrequests.php" id="see-all">See all the blood request without filter</a>
         
     </div>
 

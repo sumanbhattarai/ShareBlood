@@ -27,20 +27,20 @@
             <br>
             <form action="">
 
-            <input type="text" name="user-name" placeholder="Full Name" ><br>
-            <input type="text" name="user-age" placeholder="Age"> <br>
-            <input type="text" name="user-phone-number" placeholder="Phone Number"> <br> 
-            <select name="state" id="">
+            <input type="text" name="user-name" placeholder="Full Name" pattern="[A-Za-z]+\s[A-Za-z]+" required ><br>
+            <input type="text" name="user-age" placeholder="Age" pattern="[0-9]{2}" required> <br>
+            <input type="text" name="user-phone-number" placeholder="Phone Number" pattern="[9]{1}[0-9]{9}" required> <br> 
+            <select name="state" id="" required>
                 <option value="" disabled selected> State No.</option>
                 <option value="4">4</option>
             </select>
             <br>
-            <select name="district" id="">
+            <select name="district" id="" required>
                 <option value="" disabled selected>District</option>
                 <option value="Kaski">Kaski</option>
             </select>
             <br>
-            <select name="city-village" id="">
+            <select name="city-village" id="" required>
                 <option value="" disabled selected>City / Village</option>
                 <option value="Kaski">Pokhara</option>
             </select>

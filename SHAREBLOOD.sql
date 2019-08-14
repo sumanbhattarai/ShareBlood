@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Aug 11, 2019 at 08:28 AM
+-- Generation Time: Aug 14, 2019 at 09:08 AM
 -- Server version: 5.7.25
 -- PHP Version: 7.3.1
 
@@ -52,7 +52,10 @@ INSERT INTO `bloodrequests` (`id`, `patient name`, `patient age`, `hospital name
 (3, 'Abiral Bhattarai', 21, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'A-', '2019-08-19', '07:00:00', 1, 'Brain Surgery', 1),
 (4, 'Adrian Pradhan', 39, 'Chitwan Medical College ', 'State 3 - Chitwan - Bharatpur', 56596211, 'cmc@gmail.com', 'B-', '2019-08-19', '05:00:00', 3, 'Period Blood transfusion', 1),
 (5, 'Abiral Murga', 36, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'B-', '2019-08-11', '17:00:00', 2, 'Pregnancy', 1),
-(6, 'Test Case', 21, 'Chitwan Medical College ', 'State 3 - Chitwan - Bharatpur', 56596211, 'cmc@gmail.com', 'O+', '2019-08-20', '18:00:00', 3, 'sfdsf', 1);
+(6, 'Test Case', 21, 'Chitwan Medical College ', 'State 3 - Chitwan - Bharatpur', 56596211, 'cmc@gmail.com', 'O+', '2019-08-20', '18:00:00', 3, 'sfdsf', 1),
+(7, 'Someone Thapa', 32, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'B+', '2019-08-14', '14:00:00', 2, 'Operation , Accident', 1),
+(8, 'Testing Only', 22, 'Gandaki Medical College ', 'State 4 - Kaski - Pokhara', 56570053, 'gmc@gmail.com', 'B+', '2019-08-20', '16:00:00', 2, 'Accident', 1),
+(9, 'Bishwash Man', 23, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'A-', '2019-08-14', '15:00:00', 4, 'Accident', 1);
 
 -- --------------------------------------------------------
 
@@ -189,29 +192,36 @@ CREATE TABLE `donor` (
   `district` varchar(100) NOT NULL,
   `city / village` varchar(100) NOT NULL,
   `last donated` date DEFAULT NULL,
-  `blood group` varchar(3) NOT NULL
+  `blood group` varchar(3) NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `donor`
 --
 
-INSERT INTO `donor` (`id`, `name`, `phone number`, `state`, `district`, `city / village`, `last donated`, `blood group`) VALUES
-(1, 'Suman Bhattarai', '9845696211', 4, 'Kaski', 'Pokhara', NULL, 'AB+'),
-(2, 'Sujan Bhattarai', '9845949149', 4, 'Kaski', 'Pokhara', NULL, 'O+'),
-(3, 'Sujan Tiwari', '9821101274', 4, 'Kaski', 'Pokhara', NULL, 'A-'),
-(4, 'Sandesh Shrestha', '9846273518', 4, 'Kaski', 'Pokhara', NULL, 'AB+'),
-(5, 'Nibesh Thapa', '9846274554', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+'),
-(6, 'Suraj Shrestha', '9876543210', 3, 'Chitwan', 'Bharatpur', '2019-08-08', 'AB+'),
-(7, 'Devraj Acharya', '9876639393', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+'),
-(8, 'Sujan Shah', '9896654357', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+'),
-(9, 'Elope Tamang', '9845602746', 3, 'Chitwan', 'Bharatpur', '2019-08-09', 'AB+'),
-(10, 'Numit Malla', '9845911011', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+'),
-(11, 'Rosan Regmi', '9898463425', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+'),
-(12, 'Amit Shrestha', '9898463333', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+'),
-(13, 'Sulav Shrestha', '9856092745', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+'),
-(14, 'Post Malone', '9809198678', 4, 'Kaski', 'Pokhara', NULL, 'A-'),
-(15, 'Lurey Vai', '9800118274', 4, 'Kaski', 'Pokhara', NULL, 'B+');
+INSERT INTO `donor` (`id`, `name`, `phone number`, `state`, `district`, `city / village`, `last donated`, `blood group`, `status`) VALUES
+(1, 'Suman Bhattarai', '9845696211', 4, 'Kaski', 'Pokhara', '2019-08-12', 'AB+', 1),
+(2, 'Sujan Bhattarai', '9845949149', 4, 'Kaski', 'Pokhara', '2019-01-01', 'O+', 1),
+(3, 'Sujan Gunda', '9821101200', 4, 'Kaski', 'Pokhara', '2019-08-12', 'O-', 1),
+(4, 'Sandesh Shrestha', '9846273518', 4, 'Kaski', 'Pokhara', NULL, 'AB+', 1),
+(5, 'Nibesh Thapa', '9846274554', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1),
+(6, 'Suraj Shrestha', '9876543210', 3, 'Chitwan', 'Bharatpur', '2019-08-08', 'AB+', 1),
+(7, 'Devraj Acharya', '9876639393', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1),
+(8, 'Sujan Shah', '9896654357', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1),
+(9, 'Elope Tamang', '9845602746', 3, 'Chitwan', 'Bharatpur', '2019-08-09', 'AB+', 1),
+(10, 'Numit Malla', '9845911011', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1),
+(11, 'Rosan Regmi', '9898463425', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1),
+(12, 'Amit Shrestha', '9898463333', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1),
+(13, 'Sulav Shrestha', '9856092745', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1),
+(14, 'Post Malone', '9809198678', 4, 'Kaski', 'Pokhara', NULL, 'A-', 1),
+(15, 'Lurey Vai', '9800118274', 4, 'Kaski', 'Pokhara', NULL, 'B+', 1),
+(16, 'Test Test', '000000000', 4, 'Kaski', 'Pokhara', '2019-08-11', 'B-', 1),
+(17, 'Ed Sheeran', '8888888888', 4, 'Kaski', 'Pokhara', NULL, 'B-', 1),
+(18, 'Sandesh test', '9800011111', 4, 'Kaski', 'Pokhara', NULL, 'A+', 1),
+(19, 'Sunil Golden', '9846714514', 4, 'Kaski', 'Pokhara', '2019-08-14', 'A+', 1),
+(20, 'Bishweas Ojha', '9803414296', 4, 'Kaski', 'Pokhara', NULL, 'B+', 1),
+(21, 'Samir Poudel', '9846856367', 4, 'Kaski', 'Pokhara', '2019-08-14', 'A+', 1);
 
 -- --------------------------------------------------------
 
@@ -363,7 +373,7 @@ ALTER TABLE `try`
 -- AUTO_INCREMENT for table `bloodrequests`
 --
 ALTER TABLE `bloodrequests`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `city / village`
@@ -381,7 +391,7 @@ ALTER TABLE `district`
 -- AUTO_INCREMENT for table `donor`
 --
 ALTER TABLE `donor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `hospital`

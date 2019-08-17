@@ -1,6 +1,7 @@
 <?php
 include('modules/checkSession.php') ;
 include('modules/login.php');
+include('modules/dailyUpdate.php');
 ?>
 
 <!DOCTYPE html>

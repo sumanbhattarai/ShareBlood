@@ -80,9 +80,7 @@ include('modules/session.php') ;
                 and state = '$hospitalState' 
                 and district = '$hospitalDistrict' 
                 and `city / village` = '$hospitalCityVillage' 
-                
-                -- and (`last donated` IS NULL or `last donated` < DATEADD(day,-90,GETDATE()))
-                and (`last donated` is null)
+                and `ability` is true 
                 order by rand()  " ;
                 $data = mysqli_query($conn , $query) ;
                 if (mysqli_num_rows($data) > 0) 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Aug 14, 2019 at 09:08 AM
+-- Generation Time: Aug 18, 2019 at 04:51 AM
 -- Server version: 5.7.25
 -- PHP Version: 7.3.1
 
@@ -193,6 +193,7 @@ CREATE TABLE `donor` (
   `city / village` varchar(100) NOT NULL,
   `last donated` date DEFAULT NULL,
   `blood group` varchar(3) NOT NULL,
+  `ability` tinyint(1) NOT NULL DEFAULT '1',
   `status` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -200,28 +201,47 @@ CREATE TABLE `donor` (
 -- Dumping data for table `donor`
 --
 
-INSERT INTO `donor` (`id`, `name`, `phone number`, `state`, `district`, `city / village`, `last donated`, `blood group`, `status`) VALUES
-(1, 'Suman Bhattarai', '9845696211', 4, 'Kaski', 'Pokhara', '2019-08-12', 'AB+', 1),
-(2, 'Sujan Bhattarai', '9845949149', 4, 'Kaski', 'Pokhara', '2019-01-01', 'O+', 1),
-(3, 'Sujan Gunda', '9821101200', 4, 'Kaski', 'Pokhara', '2019-08-12', 'O-', 1),
-(4, 'Sandesh Shrestha', '9846273518', 4, 'Kaski', 'Pokhara', NULL, 'AB+', 1),
-(5, 'Nibesh Thapa', '9846274554', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1),
-(6, 'Suraj Shrestha', '9876543210', 3, 'Chitwan', 'Bharatpur', '2019-08-08', 'AB+', 1),
-(7, 'Devraj Acharya', '9876639393', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1),
-(8, 'Sujan Shah', '9896654357', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1),
-(9, 'Elope Tamang', '9845602746', 3, 'Chitwan', 'Bharatpur', '2019-08-09', 'AB+', 1),
-(10, 'Numit Malla', '9845911011', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1),
-(11, 'Rosan Regmi', '9898463425', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1),
-(12, 'Amit Shrestha', '9898463333', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1),
-(13, 'Sulav Shrestha', '9856092745', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1),
-(14, 'Post Malone', '9809198678', 4, 'Kaski', 'Pokhara', NULL, 'A-', 1),
-(15, 'Lurey Vai', '9800118274', 4, 'Kaski', 'Pokhara', NULL, 'B+', 1),
-(16, 'Test Test', '000000000', 4, 'Kaski', 'Pokhara', '2019-08-11', 'B-', 1),
-(17, 'Ed Sheeran', '8888888888', 4, 'Kaski', 'Pokhara', NULL, 'B-', 1),
-(18, 'Sandesh test', '9800011111', 4, 'Kaski', 'Pokhara', NULL, 'A+', 1),
-(19, 'Sunil Golden', '9846714514', 4, 'Kaski', 'Pokhara', '2019-08-14', 'A+', 1),
-(20, 'Bishweas Ojha', '9803414296', 4, 'Kaski', 'Pokhara', NULL, 'B+', 1),
-(21, 'Samir Poudel', '9846856367', 4, 'Kaski', 'Pokhara', '2019-08-14', 'A+', 1);
+INSERT INTO `donor` (`id`, `name`, `phone number`, `state`, `district`, `city / village`, `last donated`, `blood group`, `ability`, `status`) VALUES
+(1, 'Suman Bhattarai', '9845696211', 4, 'Kaski', 'Pokhara', '2019-05-12', 'AB+', 1, 1),
+(2, 'Sujan Bhattarai', '9845949149', 4, 'Kaski', 'Pokhara', '2019-01-01', 'O+', 1, 1),
+(3, 'Sujan Gunda', '9821101200', 4, 'Kaski', 'Pokhara', '2019-08-12', 'O-', 0, 1),
+(4, 'Sandesh Shrestha', '9846273518', 4, 'Kaski', 'Pokhara', NULL, 'AB+', 1, 1),
+(5, 'Nibesh Thapa', '9846274554', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1, 1),
+(6, 'Suraj Shrestha', '9876543210', 3, 'Chitwan', 'Bharatpur', '2019-08-08', 'AB+', 0, 1),
+(7, 'Devraj Acharya', '9876639393', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1, 1),
+(8, 'Sujan Shah', '9896654357', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1, 1),
+(9, 'Elope Tamang', '9845602746', 3, 'Chitwan', 'Bharatpur', '2019-08-09', 'AB+', 0, 1),
+(10, 'Numit Malla', '9845911011', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1, 1),
+(11, 'Rosan Regmi', '9898463425', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1, 1),
+(12, 'Amit Shrestha', '9898463333', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1, 1),
+(13, 'Sulav Shrestha', '9856092745', 3, 'Chitwan', 'Bharatpur', NULL, 'AB+', 1, 1),
+(14, 'Post Malone', '9809198678', 4, 'Kaski', 'Pokhara', NULL, 'A-', 1, 1),
+(15, 'Lurey Vai', '9800118274', 4, 'Kaski', 'Pokhara', NULL, 'B+', 1, 1),
+(16, 'Test Test', '000000000', 4, 'Kaski', 'Pokhara', '2019-08-11', 'B-', 0, 1),
+(17, 'Ed Sheeran', '8888888888', 4, 'Kaski', 'Pokhara', NULL, 'B-', 1, 1),
+(18, 'Sandesh test', '9800011111', 4, 'Kaski', 'Pokhara', NULL, 'A+', 1, 1),
+(19, 'Sunil Golden', '9846714514', 4, 'Kaski', 'Pokhara', '2019-08-14', 'A+', 0, 1),
+(20, 'Bishweas Ojha', '9803414296', 4, 'Kaski', 'Pokhara', NULL, 'B+', 1, 1),
+(21, 'Samir Poudel', '9846856367', 4, 'Kaski', 'Pokhara', '2019-08-14', 'A+', 0, 1),
+(22, 'Shrinkhala Khatiwada', '9999999991', 4, 'Kaski', 'Pokhara', '2019-05-17', 'B-', 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `example`
+--
+
+CREATE TABLE `example` (
+  `id` int(11) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `example`
+--
+
+INSERT INTO `example` (`id`, `date`) VALUES
+(1, '2019-02-05');
 
 -- --------------------------------------------------------
 
@@ -342,6 +362,12 @@ ALTER TABLE `donor`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `example`
+--
+ALTER TABLE `example`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `hospital`
 --
 ALTER TABLE `hospital`
@@ -391,7 +417,13 @@ ALTER TABLE `district`
 -- AUTO_INCREMENT for table `donor`
 --
 ALTER TABLE `donor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+
+--
+-- AUTO_INCREMENT for table `example`
+--
+ALTER TABLE `example`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `hospital`

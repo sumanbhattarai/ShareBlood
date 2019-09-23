@@ -3,6 +3,7 @@
 error_reporting(0);
 include('modules/connection.php');
 include('modules/session.php') ;
+include('modules/dailyUpdate.php');
 
 ?>
 

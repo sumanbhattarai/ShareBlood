@@ -1,6 +1,7 @@
 <?php
     include('modules/connection.php');
     include('modules/checkSession.php');
+    include('modules/requestVerify.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">

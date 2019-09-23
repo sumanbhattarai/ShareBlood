@@ -1,6 +1,8 @@
 <?php
     include('modules/connection.php');
     include('modules/checkSession.php');
+    include('modules/requestVerify.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +32,7 @@
         $address = 'State '.$state.' - '.$district.' - '.$cityvillage ; 
         $bloodgroup = $_POST['bloodgroup'];
 
-        $query = "SELECT * from bloodrequests WHERE `hospital address` = '$address' and `blood group` = '$bloodgroup' ORDER BY `date` , `time` " ;
+        $query = "SELECT * from bloodrequests WHERE `hospital address` = '$address' and `blood group` = '$bloodgroup' and `status` = 1 ORDER BY `date` , `time` " ;
         $data = mysqli_query($conn , $query) ;
         if(mysqli_num_rows($data)>0)
         {

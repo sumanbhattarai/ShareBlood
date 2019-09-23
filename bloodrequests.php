@@ -24,7 +24,7 @@
 
     <div class = "request-post-box">
         <?php
-        $query = "SELECT * from bloodrequests ORDER BY `date` , `time` " ;
+        $query = "SELECT * from bloodrequests WHERE `status` = 1  ORDER BY `date` , `time`  " ;
         $data = mysqli_query($conn , $query) ;
         if(mysqli_num_rows($data)>0)
         {

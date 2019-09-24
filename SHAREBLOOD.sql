@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Aug 30, 2019 at 01:42 AM
+-- Generation Time: Sep 24, 2019 at 09:07 AM
 -- Server version: 5.7.25
 -- PHP Version: 7.3.1
 
@@ -47,16 +47,18 @@ CREATE TABLE `bloodrequests` (
 --
 
 INSERT INTO `bloodrequests` (`id`, `patient name`, `patient age`, `hospital name`, `hospital address`, `hospital telephone`, `email`, `blood group`, `date`, `time`, `pint`, `cause`, `status`) VALUES
-(1, 'Nibesh Thapa', 21, 'Chitwan Medical College ', 'State 3 - Chitwan - Bharatpur', 56596211, 'cmc@gmail.com', 'O-', '2019-08-31', '14:00:00', 2, 'Accident', 1),
-(2, 'Sita Tamang', 32, 'Gandaki Medical College ', 'State 4 - Kaski - Pokhara', 56570053, 'gmc@gmail.com', 'B+', '2019-08-31', '12:00:00', 2, 'Pregancy', 1),
-(3, 'Abiral Bhattarai', 21, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'A-', '2019-08-31', '07:00:00', 1, 'Brain Surgery', 1),
-(4, 'Adrian Pradhan', 39, 'Chitwan Medical College ', 'State 3 - Chitwan - Bharatpur', 56596211, 'cmc@gmail.com', 'B-', '2019-09-01', '05:00:00', 3, 'Period Blood transfusion', 1),
-(5, 'Abiral Murga', 36, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'B-', '2019-09-02', '17:00:00', 2, 'Pregnancy', 1),
-(6, 'Test Case', 21, 'Chitwan Medical College ', 'State 3 - Chitwan - Bharatpur', 56596211, 'cmc@gmail.com', 'O+', '2019-08-31', '18:00:00', 3, 'sfdsf', 1),
-(7, 'Someone Thapa', 32, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'B+', '2019-09-01', '14:00:00', 2, 'Operation , Accident', 1),
-(8, 'Testing Only', 22, 'Gandaki Medical College ', 'State 4 - Kaski - Pokhara', 56570053, 'gmc@gmail.com', 'B+', '2019-08-31', '16:00:00', 2, 'Accident', 1),
-(9, 'Bishwash Man', 23, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'A-', '2019-09-03', '15:00:00', 4, 'Accident', 1),
-(10, 'Golden Sunil', 22, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'O-', '2019-08-31', '14:00:00', 2, 'Accident', 1);
+(1, 'Nibesh Thapa', 21, 'Chitwan Medical College ', 'State 3 - Chitwan - Bharatpur', 56596211, 'cmc@gmail.com', 'O-', '2019-09-30', '14:00:00', 2, 'Accident', 1),
+(2, 'Sita Tamang', 32, 'Gandaki Medical College ', 'State 4 - Kaski - Pokhara', 56570053, 'gmc@gmail.com', 'B+', '2019-10-01', '12:00:00', 2, 'Pregancy', 1),
+(3, 'Abiral Bhattarai', 21, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'A-', '2019-08-31', '07:00:00', 1, 'Brain Surgery', 0),
+(4, 'Adrian Pradhan', 39, 'Chitwan Medical College ', 'State 3 - Chitwan - Bharatpur', 56596211, 'cmc@gmail.com', 'B-', '2019-09-01', '05:00:00', 3, 'Period Blood transfusion', 0),
+(5, 'Abiral Murga', 36, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'B-', '2019-09-02', '17:00:00', 2, 'Pregnancy', 0),
+(6, 'Test Case', 21, 'Chitwan Medical College ', 'State 3 - Chitwan - Bharatpur', 56596211, 'cmc@gmail.com', 'O+', '2019-09-28', '20:18:00', 3, 'sfdsf', 1),
+(7, 'Someone Thapa', 32, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'B+', '2019-09-01', '14:00:00', 2, 'Operation , Accident', 0),
+(8, 'Testing Only', 22, 'Gandaki Medical College ', 'State 4 - Kaski - Pokhara', 56570053, 'gmc@gmail.com', 'B+', '2019-09-27', '16:00:00', 2, 'Accident', 1),
+(9, 'Bishwash Man', 23, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'A-', '2019-09-03', '15:00:00', 4, 'Accident', 0),
+(10, 'Golden Sunil', 22, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'O-', '2019-08-31', '14:00:00', 2, 'Accident', 0),
+(11, 'sss test', 21, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'A-', '2019-08-31', '14:00:00', 2, 'asdfsdfs', 0),
+(12, 'Sachin Xoro', 21, 'Manipal Hospital ', 'State 4 - Kaski - Pokhara', 7645362711, 'manipal@gmail.com', 'A-', '2019-09-07', '10:00:00', 2, 'ACCIDENT', 0);
 
 -- --------------------------------------------------------
 
@@ -203,7 +205,7 @@ CREATE TABLE `donor` (
 --
 
 INSERT INTO `donor` (`id`, `name`, `phone number`, `state`, `district`, `city / village`, `last donated`, `blood group`, `ability`, `status`) VALUES
-(1, 'Suman Bhattarai', '9845696211', 4, 'Kaski', 'Pokhara', '2019-05-12', 'AB+', 1, 1),
+(1, 'Suman Bhattarai', '9845696211', 4, 'Kaski', 'Pokhara', '2019-06-05', 'AB+', 1, 1),
 (2, 'Sujan Bhattarai', '9845949149', 4, 'Kaski', 'Pokhara', '2019-01-01', 'O+', 1, 1),
 (3, 'Sujan Gunda', '9821101200', 4, 'Kaski', 'Pokhara', '2019-08-12', 'O-', 0, 1),
 (4, 'Sandesh Shrestha', '9846273518', 4, 'Kaski', 'Pokhara', NULL, 'AB+', 1, 1),
@@ -220,12 +222,14 @@ INSERT INTO `donor` (`id`, `name`, `phone number`, `state`, `district`, `city / 
 (15, 'Lurey Vai', '9800118274', 4, 'Kaski', 'Pokhara', NULL, 'B+', 1, 1),
 (16, 'Test Test', '000000000', 4, 'Kaski', 'Pokhara', '2019-08-11', 'B-', 0, 1),
 (17, 'Ed Sheeran', '8888888888', 4, 'Kaski', 'Pokhara', NULL, 'B-', 1, 1),
-(18, 'Sandesh test', '9800011111', 4, 'Kaski', 'Pokhara', NULL, 'A+', 1, 1),
+(18, 'Sandesh test', '9800011111', 4, 'Kaski', 'Pokhara', '2019-08-30', 'A+', 0, 1),
 (19, 'Sunil Golden', '9846714514', 4, 'Kaski', 'Pokhara', '2019-08-14', 'A+', 0, 1),
-(20, 'Bishweas Ojha', '9803414296', 4, 'Kaski', 'Pokhara', NULL, 'B+', 1, 1),
+(20, 'Bishweas Ojha', '9803414296', 4, 'Kaski', 'Pokhara', '2019-09-23', 'B+', 0, 1),
 (21, 'Samir Poudel', '9846856367', 4, 'Kaski', 'Pokhara', '2019-08-14', 'A+', 0, 1),
 (22, 'Shrinkhala Khatiwada', '9999999991', 4, 'Kaski', 'Pokhara', '2019-05-17', 'B-', 1, 1),
-(23, 'Mohammed Rahim', '9811226767', 4, 'Kaski', 'Pokhara', '2019-08-30', 'O+', 0, 1);
+(23, 'Mohammed Rahim', '9811226767', 4, 'Kaski', 'Pokhara', '2019-08-30', 'O+', 0, 1),
+(24, 'Suman test', '9811119989', 4, 'Kaski', 'Pokhara', NULL, 'B+', 1, 1),
+(25, 'Asmit Stha', '9812312312', 4, 'Kaski', 'Pokhara', '2019-09-06', 'A+', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -401,7 +405,7 @@ ALTER TABLE `try`
 -- AUTO_INCREMENT for table `bloodrequests`
 --
 ALTER TABLE `bloodrequests`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `city / village`
@@ -419,7 +423,7 @@ ALTER TABLE `district`
 -- AUTO_INCREMENT for table `donor`
 --
 ALTER TABLE `donor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `example`

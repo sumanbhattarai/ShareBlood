@@ -56,7 +56,7 @@ include('modules/dailyUpdate.php');
            <div class ="gatherinformation">
                <form action="donorsuccess.php" method="post">
                    <br><br>
-                   <input type="text" name = "fullname" placeholder="Full Name" pattern="[A-Za-z]+\s[A-Za-z]+" required> <br><br>
+                   <input type="text" name = "fullname" placeholder="Full Name" pattern="[A-Za-z]+\s[A-Za-z\s]+" required> <br><br>
                     <input type="text" name = "phonenumber" placeholder="Phone Number" pattern="[9]{1}[0-9]{9}" required> <br><br>
                    <select name="state" id="state" required>
                        <option value="" disabled selected>State</option>

@@ -25,7 +25,7 @@
             </div>
             <div class="bigbox">
                 <br><br><br>
-                <form action="verify.php" method="POST">
+                <form action="modules/signupSuccess.php" method="POST">
                     <input type="text" name="name" id="name" placeholder="Hospital Name" required ><br><br>
                     <input type="email" name="email" id="email" placeholder="Email" required ><br><br>
                     <input type="password" name="password" id="password" placeholder="Password" required ><br><br>

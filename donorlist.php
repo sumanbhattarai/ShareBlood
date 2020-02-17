@@ -38,8 +38,8 @@ include('modules/session.php') ;
                         <a href="home.php"><?php  echo $result['name'] ;   ?></a>
                     </div>
                     <div class="options-box">
-                        <i class="fas fa-bell" id="bell" title="Notification"></i>
-                        <div class="notification-count">99</div>
+                        <!-- <i class="fas fa-bell" id="bell" title="Notification"></i> -->
+                        <!-- <div class="notification-count">99</div> -->
                         <i class="fas fa-cogs" id="setting" title="Setting" onclick="window.location.href='settings.php'"></i>
                     </div>
                     <div class="logout-box">
